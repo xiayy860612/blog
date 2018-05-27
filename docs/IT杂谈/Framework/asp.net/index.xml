@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>asp.net on Amos的Blog</title>
-    <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/</link>
+    <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/</link>
     <description>Recent content in asp.net on Amos的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
     <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
     
-	<atom:link href="/it%E6%9D%82%E8%B0%88/framework/asp.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Framework/asp.net/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>.Net Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/dotnet-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/dotnet-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/dotnet-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/dotnet-intro/</guid>
       <description>&lt;p&gt;学习&lt;a href=&#34;https://docs.microsoft.com/zh-cn/dotnet/articles/standard/&#34;&gt;.Net&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ASP.Net Core Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/asp.net-core-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/asp.net-core-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/asp.net-core-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/asp.net-core-intro/</guid>
       <description>&lt;p&gt;ASP.Net Core 简介
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Model Binding</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/model-binding/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/model-binding/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/model-binding/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/model-binding/</guid>
       <description>&lt;p&gt;Research &lt;a href=&#34;https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding&#34;&gt;Model Binding&lt;/a&gt; in ASP.Net Core
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Router</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/router/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/router/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/router/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/router/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Serializer</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/serializer/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/serializer/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/serializer/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/serializer/</guid>
       <description>&lt;p&gt;Research &lt;a href=&#34;https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting&#34;&gt;Serializer&lt;/a&gt; in ASP.Net Core.
 &lt;/p&gt;</description>
     </item>

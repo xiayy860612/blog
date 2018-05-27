@@ -14,48 +14,48 @@
     
     <item>
       <title>知识BBQ-成都-20180527</title>
-      <link>/%E7%9F%A5%E8%AF%86bbq/cd/20180527/</link>
+      <link>/%E7%9F%A5%E8%AF%86BBQ/CD/20180527/</link>
       <pubDate>Sun, 27 May 2018 09:09:27 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/%E7%9F%A5%E8%AF%86bbq/cd/20180527/</guid>
+      <guid>/%E7%9F%A5%E8%AF%86BBQ/CD/20180527/</guid>
       <description>TypeScript in Angular  源码
 Spring Request Workflow  文档</description>
     </item>
     
     <item>
       <title>swagger离线文档</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
       <pubDate>Sat, 19 May 2018 16:22:55 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
       <description> 目前只可兼容springfox-swagger:2.6.1
 Reference  SpringBoot项目生成RESTfull API的文档  </description>
     </item>
     
     <item>
       <title>背包问题</title>
-      <link>/it%E6%9D%82%E8%B0%88/algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</link>
       <pubDate>Wed, 16 May 2018 12:53:23 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</guid>
       <description> Reference  动态规划之01背包问题（最易理解的讲解）  </description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/versioncontrol/git/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/VersionControl/git/</link>
       <pubDate>Mon, 14 May 2018 13:16:56 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/versioncontrol/git/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/VersionControl/git/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>阿里云负载均衡SLB</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/slb/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</link>
       <pubDate>Thu, 10 May 2018 14:28:45 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/slb/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</guid>
       <description>- SLB实例 - 监听规则 - 后端服务器
 SLB提供的功能:
  支持公网和私网的负载均衡 4层和7层的负载均衡服务 调度方式  轮询模式, 依次转发给后端服务器 最小连接数模式, 转发给最小连接数的后端服务器 加权轮询, 根据后端权重来转发  会话保持 健康检查 单个实例同城灾备, 已经部署在同地域的不同可用区  </description>
@@ -63,10 +63,10 @@ SLB提供的功能:
     
     <item>
       <title>Spring --- 请求处理流程</title>
-      <link>/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/request-workflow/</link>
+      <link>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</link>
       <pubDate>Wed, 09 May 2018 13:37:22 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/request-workflow/</guid>
+      <guid>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</guid>
       <description>Filter DispatcherServlet Interceptor HandlerAdapter  web程序启动时的初始化顺序: ServletContext -&amp;gt; listener -&amp;gt; filter -&amp;gt; servlet
 spring bean的初始化是在listener中声明的, 可以在后面使用.
 Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提供支持 作用于Servlet执行前后  @Order(1) @WebFilter(filterName = &amp;quot;customized&amp;quot;, urlPatterns = &amp;quot;/*&amp;quot;) public class CustomizedFilter implements Filter { @Override public void init(FilterConfig filterConfig) throws ServletException { log.info(&amp;quot;CustomizedFilter Init&amp;quot;); } @Override public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException { log.info(&amp;quot;CustomizedFilter doFilter before&amp;quot;); // 执行Servlet filterChain.doFilter(servletRequest, servletResponse); log.info(&amp;quot;CustomizedFilter doFilter after&amp;quot;); } @Override public void destroy() { log.</description>
@@ -74,29 +74,29 @@ Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提�
     
     <item>
       <title>WireMock</title>
-      <link>/it%E6%9D%82%E8%B0%88/qa/wiremock/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/QA/Wiremock/</link>
       <pubDate>Sun, 06 May 2018 05:20:54 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/qa/wiremock/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/QA/Wiremock/</guid>
       <description>服务的mock 录制/回放依赖服务的request/response 在集成测试时, 对第三方服务进行mock 支持state behavior进行串行行为测试  将录制和回放的数据分开
 通过test case来对所有的接口进行录制</description>
     </item>
     
     <item>
       <title>Java实用工具</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/java/good_tools/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</link>
       <pubDate>Thu, 03 May 2018 08:03:11 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/java/good_tools/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</guid>
       <description> idea  lombok, 编译时自动生成attribute的get/set方法  </description>
     </item>
     
     <item>
       <title>阿里云 --- 存储</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/oss/oss/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</link>
       <pubDate>Wed, 02 May 2018 11:10:40 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/oss/oss/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</guid>
       <description>RAID, 独立磁盘冗余阵列, 多块硬盘通过某种形式形成一定的数据冗余, 这样当一块或多块硬盘损坏时, 数据还能依靠冗余保存下来, 不至于丢失.
  RAID 0, 迅速读写, 安全性低 RAID 1, 随机数据写入, 安全性高 RAID 3, 连续数据传输, 安全性高 RAID 5, 随机数据传输, 安全性高  备份方式:
  增量备份 全量备份  灾备:
@@ -109,28 +109,28 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
     
     <item>
       <title>Shiro --- 认证</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authentication/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authentication/</link>
       <pubDate>Wed, 02 May 2018 06:03:49 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authentication/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authentication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shiro --- 鉴权</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authorization/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authorization/</link>
       <pubDate>Wed, 02 May 2018 06:03:35 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authorization/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authorization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>阿里云 --- RDS</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/rds/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</link>
       <pubDate>Tue, 01 May 2018 11:27:32 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/rds/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</guid>
       <description>MySQL的相关架构
  单机的存储与计算分离架构 双机的一主一备热备架构 一主两备三节点架构, 通过日志多副本同步复制来确保数据的强一致性  RDS提供两种连接地址: 内网地址和外网地址, 两种访问模式: 标准模式和高安全模式
 云上同一个地域的实例可以使用内网地址访问
@@ -143,68 +143,68 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
     
     <item>
       <title>知识BBQ-成都-20180429</title>
-      <link>/%E7%9F%A5%E8%AF%86bbq/cd/20180429/</link>
+      <link>/%E7%9F%A5%E8%AF%86BBQ/CD/20180429/</link>
       <pubDate>Mon, 30 Apr 2018 13:36:19 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/%E7%9F%A5%E8%AF%86bbq/cd/20180429/</guid>
+      <guid>/%E7%9F%A5%E8%AF%86BBQ/CD/20180429/</guid>
       <description> 本次活动的主题为互联网分布式系统应用架构的概览, 主要从2个层面的扩展来看, 网络层和应用层
 网络层  BGP多线技术 CDN DNS  应用层  负载均衡  弹性收缩 独立交付  应用层缓存 同步转异步  线程池模式 消息架构  数据库读写分离  Reference  活动视频下载, 密码: fzi3  </description>
     </item>
     
     <item>
       <title>.Net Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/dotnet-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/dotnet-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/dotnet-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/dotnet-intro/</guid>
       <description>&lt;p&gt;学习&lt;a href=&#34;https://docs.microsoft.com/zh-cn/dotnet/articles/standard/&#34;&gt;.Net&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ASP.Net Core Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/asp.net-core-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/asp.net-core-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/asp.net-core-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/asp.net-core-intro/</guid>
       <description>&lt;p&gt;ASP.Net Core 简介
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Async Programming Pattern</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/async-programming/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/async-programming/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/async-programming/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/async-programming/</guid>
       <description>&lt;p&gt;C#的异步编程模型
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Atom</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/editor/atom/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/Editor/atom/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/atom/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/Editor/atom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Backend Framework Structure</title>
-      <link>/it%E6%9D%82%E8%B0%88/generic/be-framework-structure/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Generic/be-framework-structure/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/generic/be-framework-structure/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Generic/be-framework-structure/</guid>
       <description> 后端服务器框架的构建 基本组成  Host机制 Encrypt/Decrypt加密解密机制 配置管理 Authentication机制 Session管理 异常处理 路由管理 DTO接口管理 插件管理 Request Pipeline 序列化机制 日志系统 Task系统, 用于异步处理请求或定时任务 Request Cache  TCP  边界处理 连接管理  </description>
     </item>
     
     <item>
       <title>C# Generic</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/generic/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/generic/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/generic/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/generic/</guid>
       <description>&lt;hr /&gt;
 
 &lt;p&gt;Official Site &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/512aeb7t.aspx&#34;&gt;C# Generic&lt;/a&gt;
@@ -213,20 +213,20 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
     
     <item>
       <title>C# Regex Expression</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/regex/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/regex/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/regex/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/regex/</guid>
       <description>&lt;p&gt;C#使用Regex类来进行正则处理, 来自&lt;strong&gt;System.Text.RegularExpressions&lt;/strong&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>C# Serialization</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/serialization/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/serialization/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/serialization/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/serialization/</guid>
       <description>&lt;p&gt;Serialization is used to allow data to be easily stored and transferred.&lt;/p&gt;
 
 &lt;p&gt;It has tow directions
@@ -240,10 +240,10 @@ from one computer or application domain to another.
     
     <item>
       <title>C&#43;&#43; --- Smart Point</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/cpp/smart_point/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/cpp/smart_point/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/cpp/smart_point/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/cpp/smart_point/</guid>
       <description>It&amp;rsquo;s defined in  header file.
  shared ownership, shared_ptr exclusive ownership, unique_ptr  Shared Ownership Cannot use assignment(=) to initialize shared_ptr.
 use make_share() to create object, it&amp;rsquo;s faster and safer coz it uses one allocations, not two:
@@ -253,29 +253,29 @@ use make_share() to create object, it&amp;rsquo;s faster and safer coz it uses o
     
     <item>
       <title>C&#43;&#43; Advance Features</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/cpp/adv_feature_list/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/cpp/adv_feature_list/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/cpp/adv_feature_list/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/cpp/adv_feature_list/</guid>
       <description> High  Template Concurrency  async &amp;amp;&amp;amp; future threads promises   Low  Smart Point Convertor Type Traits Callable Objects  Lambda Functor  Allocators Timer Container  Element Iterator Algorithm  Regex I/O  </description>
     </item>
     
     <item>
       <title>CMake</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/build/cmake/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/cmake/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/build/cmake/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/cmake/</guid>
       <description>&lt;p&gt;Study &lt;a href=&#34;https://cmake.org/&#34;&gt;CMake&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cloud Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/virtual/cloud-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Virtual/cloud-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/virtual/cloud-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Virtual/cloud-intro/</guid>
       <description> 云计算产生的原动力： - 芯片与硬件技术 - 资源虚拟化， 虚拟化技术是云计算中最关键，最核心的技术原动力。 - 面向服务架构(SOA), 资源和功能服务化是云计算的一个核心思想。 - 软件即服务(SAAS) - 互联网技术
 云架构的服务层次： - IaaS, Infrastructure as a Service - PaaS, Platform as a Service - SaaS, Software as a Service
 IaaS 基础设施层使经过虚拟化后的计算资源、存储资源和网络资源能够 以基础设施即服务的方式通过网络被用户使用和管理。
@@ -284,10 +284,10 @@ IaaS 基础设施层使经过虚拟化后的计算资源、存储资源和网络
     
     <item>
       <title>Concurrency - [Thread][Managed Threading]</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/thread/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/thread/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/thread/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/thread/</guid>
       <description>&lt;p&gt;.Net provides some &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh156548(v=vs.110).aspx&#34;&gt;Concurrency Mechanisms&lt;/a&gt; such like &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/3e8s7xdd(v=vs.110).aspx&#34;&gt;Managed Thread&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -295,10 +295,10 @@ IaaS 基础设施层使经过虚拟化后的计算资源、存储资源和网络
     
     <item>
       <title>Concurrency --- async &amp;&amp; Futures</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/cpp/async-future-promise/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/cpp/async-future-promise/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/cpp/async-future-promise/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/cpp/async-future-promise/</guid>
       <description>Hight Level Interface for Concurrency:
  std::async() std::future&amp;lt;&amp;gt; std::shared_future&amp;lt;&amp;gt;  async will try to start func immediately in a separate thread, at that time related func maybe start or not start.
 async policy:
@@ -309,10 +309,10 @@ invoke future.get() will raise one actions below:
     
     <item>
       <title>Concurrency --- threads</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/cpp/threads/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/cpp/threads/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/cpp/threads/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/cpp/threads/</guid>
       <description>Unless really know what you are doing, you should pass all objects necessary by value, so that thread use only local copies.
 when assign a func to thread, it will start directly or raise exception.
 thread.join will block until done.
@@ -322,40 +322,40 @@ Concurrency Data Access  mutex &amp;amp;&amp;amp; lock condition variable atomic
     
     <item>
       <title>Concurrency in Practice</title>
-      <link>/it%E6%9D%82%E8%B0%88/concurrency/concurrency-in-practice/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Concurrency/Concurrency-in-Practice/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/concurrency/concurrency-in-practice/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Concurrency/Concurrency-in-Practice/</guid>
       <description>&lt;p&gt;介绍如何安全使用并发，以及哪些情况是不安全的用例。
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/servicestack/configuration/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/servicestack/configuration/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/servicestack/configuration/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/servicestack/configuration/</guid>
       <description>&lt;p&gt;理解ServiceStack中的&lt;a href=&#34;http://docs.servicestack.net/appsettings&#34;&gt;Configuration&lt;/a&gt;的设计
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Configuration</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/configuration/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/configuration/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/configuration/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/configuration/</guid>
       <description>&lt;p&gt;Configuration Managemnet Implement in C#.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Dispose Pattern</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/dispose-pattern/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/dispose-pattern/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/dispose-pattern/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/dispose-pattern/</guid>
       <description>&lt;p&gt;Developers must be careful when using such system resources,
 because they must be released after they have been acquired and used.&lt;/p&gt;
 
@@ -367,10 +367,10 @@ to help release these resources.&lt;/p&gt;
     
     <item>
       <title>ECMAScript Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/javascript/ecmascript-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/javascript/ecmascript-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/javascript/ecmascript-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/javascript/ecmascript-intro/</guid>
       <description>ECMAScript是由ECMA-262标准化的脚本语言的名称， 弱类型的语言，可以为不同种类的宿主环境提供核心的脚本编程能力.
 JavaScript由3部分组成： - ECMAScript，作为JavaScript的核心， 描述了该语言的语法和基本对象。 - DOM - BOM  2011.6，ECMAScript 5.1 2015.6，ECMAScript 6  变量名需要遵守两条简单的规则： - 第一个字符必须是字母、下划线（_）或美元符号（$） - 余下的字符可以是下划线、美元符号或任何字母或数字字符
  ECMAScript 的解释程序遇到未声明过的标识符时， 用该变量名创建一个全局变量，并将其初始化为指定的值。 undefined表示声明了变量但未对其初始化时赋予该变量的值 null表示尚未存在的对象 NaN表示非数(Not a Number), 一般发生在类型(String, Boolean等)转换失败时; NaN 的另一个奇特之处在于，它与自身不相等 变量可以存在两种类型的值，即原始值和引用值。  原始值，存储在栈（stack）中的简单数据段， 也就是说，它们的值直接存储在变量访问的位置。 引用值， 存储在堆（heap）中的对象， 也就是说，存储在变量处的值是一个指针（point），指向存储对象的内存处。  原始类型：Undefined、Null、Boolean、Number 和 String，原始类型占据的空间是固定的 类的2个属性，类的属性和方法的绑定为晚绑定  constructor用于创建实例 prototype用于定义类的属性和方法  类的定义和创建  混合的构造函数/原型方式 动态原型方法  类的继承  对象冒充 原型链, 用另一类型的对象重写类的prototype属性 对象冒充和原型链混合   let and const ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量， 从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。 这在语法上，称为“暂时性死区”（temporal dead zone，简称TDZ）。</description>
@@ -378,10 +378,10 @@ JavaScript由3部分组成： - ECMAScript，作为JavaScript的核心， 描述
     
     <item>
       <title>ELK-Filebeat</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/elk/filebeat/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/ELK/filebeat/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/elk/filebeat/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/ELK/filebeat/</guid>
       <description>&lt;p&gt;Filebeat is a log data shipper.
 Installed as an agent on your servers,
 Filebeat monitors the log directories or specific log files,
@@ -393,10 +393,10 @@ tails the files, and forwards them either to Elasticsearch or Logstash for index
     
     <item>
       <title>Elixir Introduction</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/elixir-intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/elixir-intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/elixir-intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/elixir-intro/</guid>
       <description>&lt;p&gt;Elixir 是一个基于Erlang虚拟机的函数式、面向并行的通用编程语言。
 Elixir 以 Erlang 为基础，支持分布式、高容错、实时应用程序的开发，
 同时亦对其进行扩展使之借助宏实现元编程，并通过协议支持多态。&lt;/p&gt;
@@ -407,10 +407,10 @@ Elixir 以 Erlang 为基础，支持分布式、高容错、实时应用程序�
     
     <item>
       <title>Event &amp;&amp; Delegate</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/event-delegate/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/event-delegate/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/event-delegate/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/event-delegate/</guid>
       <description>&lt;p&gt;Events in the .NET Framework are based on the delegate model.
 The delegate model follows the observer design pattern,
 which enables a subscriber to register with, and receive notifications from, a provider.
@@ -419,19 +419,19 @@ which enables a subscriber to register with, and receive notifications from, a p
     
     <item>
       <title>FAQ</title>
-      <link>/it%E6%9D%82%E8%B0%88/ci/jenkins/faq/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/CI/jenkins/FAQ/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/ci/jenkins/faq/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/CI/jenkins/FAQ/</guid>
       <description> docker运行jenkins 两种常见挂载Jenkins slave节点的方法  </description>
     </item>
     
     <item>
       <title>Future &amp;&amp; Promise</title>
-      <link>/it%E6%9D%82%E8%B0%88/generic/future-promise/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Generic/Future-Promise/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/generic/future-promise/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Generic/Future-Promise/</guid>
       <description> Future Future是一种用于指代某个尚未就绪的值而被当成 只读占位符 的对象类型。 而这个值，往往是某个计算过程的结果:
  若该计算过程尚未完成，我们就说该Future未就位 若该计算过程正常结束，或中途抛出异常，我们就说该Future已就位。  Future的就位分为两种情况:
  计算成功 抛出异常  Future只能被赋值一次. 一旦给定了某个值或某个异常，future对象就变成了不可变对象——无法再被改写。
@@ -443,30 +443,30 @@ Reference  Wiki &amp;mdash; Futures and promises Future 实战中的 Promise 和
     
     <item>
       <title>GNU make</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/build/make/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/make/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/build/make/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/make/</guid>
       <description>&lt;p&gt;通过配置Makefile, 使用make对C++工程进行构建
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Gradle</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/build/gradle/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/gradle/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/build/gradle/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/gradle/</guid>
       <description>&lt;p&gt;Study &lt;a href=&#34;https://gradle.org/&#34;&gt;Gradle&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Java --- Generic泛型</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/java/generic/generic/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/generic/generic/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/java/generic/generic/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/generic/generic/</guid>
       <description>泛型的好处:
  更好的可读性 更好的安全性  泛型的类型参数使的程序具有更好的可读性和安全性.
 类型变量是泛型的固定类型, 用来指示泛型中所使用的具体类型.
@@ -481,69 +481,69 @@ Java通过类型擦除的方式提供对泛型的支持.
     
     <item>
       <title>Logstash</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/elk/logstash/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/ELK/logstash/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/elk/logstash/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/ELK/logstash/</guid>
       <description>&lt;p&gt;学习Logstash
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Model Binding</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/model-binding/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/model-binding/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/model-binding/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/model-binding/</guid>
       <description>&lt;p&gt;Research &lt;a href=&#34;https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding&#34;&gt;Model Binding&lt;/a&gt; in ASP.Net Core
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MySQL Programming</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/mysql-programming/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/mysql-programming/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/mysql-programming/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/mysql-programming/</guid>
       <description>&lt;p&gt;介绍C#中如何使用MySQL Connect和MySQL进行交互
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Netty 介绍</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/netty/intro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/netty/intro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/netty/intro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/netty/intro/</guid>
       <description>&lt;p&gt;NIO网络框架
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Python之Sublime Text3 配置</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/editor/python-env-sublime3/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/Editor/python-env-sublime3/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/python-env-sublime3/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/Editor/python-env-sublime3/</guid>
       <description>&lt;p&gt;Python在Sublime Text3中的配置
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>RESTful</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/restful/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/restful/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/restful/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/restful/</guid>
       <description> Reference </description>
     </item>
     
     <item>
       <title>Real-Time Server Framework - Photon</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/photon/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/photon/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/photon/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/photon/</guid>
       <description>Photon可用于构建实时性的游戏服务器。 可用于构建Load Balance或者MMO Server。
 Official Site: https://www.photonengine.com/en-US/ Basic Knowledge ApplicationBase It used to set up an server application and create connection peers.
 Importance Interface: - PeerBase CreatePeer(InitRequest initRequest), when a new connection comes, this function will be raised. - void Setup() - void TearDown()
@@ -553,28 +553,28 @@ Each kind of peer should inherit from PeerBase. There are some different kind of
     
     <item>
       <title>Redis 参考文章</title>
-      <link>/it%E6%9D%82%E8%B0%88/storage/redis/ref/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Storage/redis/ref/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/storage/redis/ref/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Storage/redis/ref/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Router</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/router/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/router/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/router/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/router/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>SOAP Protocol</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/soap/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/soap/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/soap/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/soap/</guid>
       <description>&lt;p&gt;SOAP(Simple Object Access Protocol), 简单对象访问协议,
 是交换数据的一种协议规范, 使用在web service中交换带结构信息.&lt;/p&gt;
 
@@ -584,20 +584,20 @@ Each kind of peer should inherit from PeerBase. There are some different kind of
     
     <item>
       <title>Serializer</title>
-      <link>/it%E6%9D%82%E8%B0%88/framework/asp.net/serializer/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/serializer/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/framework/asp.net/serializer/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/asp.net/serializer/</guid>
       <description>&lt;p&gt;Research &lt;a href=&#34;https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting&#34;&gt;Serializer&lt;/a&gt; in ASP.Net Core.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Shiro</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/shiro/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/shiro/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</guid>
       <description> 大概的处理流程:
  Shiro Filter 获取token 使用token来进行Subject.login 通过Realm.supports来找到对应的Realm 将token传递给Realm.doGetAuthenticationInfo, 进行认证, 获取认证后的信息 将获取到的认证后的信息传递给Realm.doGetAuthorizationInfo, 进行鉴权, 获取角色和权限信息  Shiro的拦截器Filter 配置在ShiroFilterFactoryBean中
 Reference  跟我学Shiro  </description>
@@ -605,10 +605,10 @@ Reference  跟我学Shiro  </description>
     
     <item>
       <title>Stream</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/stream/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/stream/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/stream/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/stream/</guid>
       <description>&lt;p&gt;C#中的&lt;a href=&#34;https://msdn.microsoft.com/en-US/library/k3352a4t.aspx&#34;&gt;Stream处理机制&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;System.IO&lt;/strong&gt; namespace contains types related to stream read/write.
@@ -617,95 +617,95 @@ Reference  跟我学Shiro  </description>
     
     <item>
       <title>Sublime Text3 环境配置</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/editor/sublime-text3-config/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/Editor/sublime-text3-config/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/sublime-text3-config/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/Editor/sublime-text3-config/</guid>
       <description>&lt;p&gt;Sublime Text3 环境配置
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Swagger 快速入门</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger-basic/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger-basic/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</guid>
       <description>Annotations</description>
     </item>
     
     <item>
       <title>Type System</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/csharp/type-system/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/type-system/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/type-system/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/csharp/type-system/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/zcx1eb1e.aspx&#34;&gt;Type System&lt;/a&gt; in C#
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Ubuntu --- 创建用户和组</title>
-      <link>/it%E6%9D%82%E8%B0%88/os/linux/commands/create_user/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/OS/linux/commands/create_user/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/os/linux/commands/create_user/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/OS/linux/commands/create_user/</guid>
       <description> useradd, 创建用户  /etc/passwd  groupadd, 创建组  /etc/   </description>
     </item>
     
     <item>
       <title>Yaml</title>
-      <link>/it%E6%9D%82%E8%B0%88/generic/yaml/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Generic/yaml/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/generic/yaml/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Generic/yaml/</guid>
       <description>&lt;p&gt;Study &lt;a href=&#34;http://yaml.org/&#34;&gt;Yaml&lt;/a&gt;
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Yaml</title>
-      <link>/it%E6%9D%82%E8%B0%88/tools/configuration/yaml/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/Configuration/yaml/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/tools/configuration/yaml/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/Configuration/yaml/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://yaml.org/&#34;&gt;Yaml&lt;/a&gt; for configuration
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>参考资源</title>
-      <link>/it%E6%9D%82%E8%B0%88/reference/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/reference/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/reference/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/reference/</guid>
       <description> 开源社区  Stack Overflow OpenGenus  </description>
     </item>
     
     <item>
       <title>好文推荐</title>
-      <link>/it%E6%9D%82%E8%B0%88/good-article/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/good-article/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/good-article/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/good-article/</guid>
       <description> 时间  关于“时间”的一次探索  技术博文  跟我学Shiro Swagger从入门到精通  </description>
     </item>
     
     <item>
       <title>常用命令</title>
-      <link>/it%E6%9D%82%E8%B0%88/os/linux/usefull-command/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/OS/linux/usefull-command/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/os/linux/usefull-command/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/OS/linux/usefull-command/</guid>
       <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>时间的探索之旅 --- Java篇</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/java/time/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/java/time/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</guid>
       <description>不同的时间 时区 时间的表示方式  不同的时间  GMT UTC CST  GMT(Greenwich Mean Time), 格林尼治时间, 是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.
 UTC(Coordinated Universal Time), 协调世界时
 GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确, UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标, 以及以秒为单位的国际原子时所综合精算而成的时间.
@@ -719,10 +719,10 @@ CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间
     
     <item>
       <title>树 &amp;&amp; 二叉树</title>
-      <link>/it%E6%9D%82%E8%B0%88/algorithm/tree/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/algorithm/tree/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/</guid>
       <description> 树的组成:
  节点(node)  根节点(root) 子节点(child) 叶节点(leaf)  边(edge)  树的路径是指一个节点到另一个节点之间的节点序列, 路径的长即为两个节点间的边的条数
 节点的深度是指从根节点到指定节点的唯一路径的长.
@@ -737,19 +737,19 @@ CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间
     
     <item>
       <title>认证方式 --- OAuth</title>
-      <link>/it%E6%9D%82%E8%B0%88/web/auth/oauth/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/oauth/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/web/auth/oauth/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/oauth/</guid>
       <description> Reference  理解OAuth 2.0 关于 RESTFUL API 安全认证方式的一些总结  </description>
     </item>
     
     <item>
       <title>阿里云 OSS &amp;&amp; CDN</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/cdn/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/CDN/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/cdn/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/CDN/</guid>
       <description> 使用OSS作为源站, OSS用于存储上传数据; CDN提供CDN节点, 缓存OSS源站的内容.
 OSS  可使用ACL对存储桶进行基本读写权限设置 可使用RAM子账号提供对资源访问控制 通过 Delimiter 和 Prefix 参数的配合模拟出文件夹功能  CDN  可设置RAM子用户对CDN资源的访问权限进行管理   </description>
     </item>

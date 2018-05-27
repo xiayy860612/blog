@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SLB on Amos的Blog</title>
-    <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/</link>
+    <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/</link>
     <description>Recent content in SLB on Amos的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
     <lastBuildDate>Thu, 10 May 2018 14:28:45 +0000</lastBuildDate>
     
-	<atom:link href="/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>阿里云负载均衡SLB</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/slb/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</link>
       <pubDate>Thu, 10 May 2018 14:28:45 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/slb/slb/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</guid>
       <description>- SLB实例 - 监听规则 - 后端服务器
 SLB提供的功能:
  支持公网和私网的负载均衡 4层和7层的负载均衡服务 调度方式  轮询模式, 依次转发给后端服务器 最小连接数模式, 转发给最小连接数的后端服务器 加权轮询, 根据后端权重来转发  会话保持 健康检查 单个实例同城灾备, 已经部署在同地域的不同可用区  </description>

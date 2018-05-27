@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RDS on Amos的Blog</title>
-    <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/</link>
+    <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/</link>
     <description>Recent content in RDS on Amos的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
     <lastBuildDate>Tue, 01 May 2018 11:27:32 +0000</lastBuildDate>
     
-	<atom:link href="/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>阿里云 --- RDS</title>
-      <link>/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/rds/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</link>
       <pubDate>Tue, 01 May 2018 11:27:32 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/cloud/aliyun/rds/rds/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</guid>
       <description>MySQL的相关架构
  单机的存储与计算分离架构 双机的一主一备热备架构 一主两备三节点架构, 通过日志多副本同步复制来确保数据的强一致性  RDS提供两种连接地址: 内网地址和外网地址, 两种访问模式: 标准模式和高安全模式
 云上同一个地域的实例可以使用内网地址访问

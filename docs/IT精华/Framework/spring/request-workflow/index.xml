@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>request-workflow on Amos的Blog</title>
-    <link>/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/</link>
+    <link>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/</link>
     <description>Recent content in request-workflow on Amos的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
     <lastBuildDate>Wed, 09 May 2018 13:37:22 +0000</lastBuildDate>
     
-	<atom:link href="/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spring --- 请求处理流程</title>
-      <link>/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/request-workflow/</link>
+      <link>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</link>
       <pubDate>Wed, 09 May 2018 13:37:22 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E7%B2%BE%E5%8D%8E/framework/spring/request-workflow/request-workflow/</guid>
+      <guid>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</guid>
       <description>Filter DispatcherServlet Interceptor HandlerAdapter  web程序启动时的初始化顺序: ServletContext -&amp;gt; listener -&amp;gt; filter -&amp;gt; servlet
 spring bean的初始化是在listener中声明的, 可以在后面使用.
 Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提供支持 作用于Servlet执行前后  @Order(1) @WebFilter(filterName = &amp;quot;customized&amp;quot;, urlPatterns = &amp;quot;/*&amp;quot;) public class CustomizedFilter implements Filter { @Override public void init(FilterConfig filterConfig) throws ServletException { log.info(&amp;quot;CustomizedFilter Init&amp;quot;); } @Override public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException { log.info(&amp;quot;CustomizedFilter doFilter before&amp;quot;); // 执行Servlet filterChain.doFilter(servletRequest, servletResponse); log.info(&amp;quot;CustomizedFilter doFilter after&amp;quot;); } @Override public void destroy() { log.</description>

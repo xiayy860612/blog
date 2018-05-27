@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on Amos的Blog</title>
-    <link>/it%E6%9D%82%E8%B0%88/language/java/</link>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/</link>
     <description>Recent content in java on Amos的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
     <lastBuildDate>Thu, 03 May 2018 08:03:11 +0000</lastBuildDate>
     
-	<atom:link href="/it%E6%9D%82%E8%B0%88/language/java/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Java实用工具</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/java/good_tools/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</link>
       <pubDate>Thu, 03 May 2018 08:03:11 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/java/good_tools/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</guid>
       <description> idea  lombok, 编译时自动生成attribute的get/set方法  </description>
     </item>
     
     <item>
       <title>时间的探索之旅 --- Java篇</title>
-      <link>/it%E6%9D%82%E8%B0%88/language/java/time/</link>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/it%E6%9D%82%E8%B0%88/language/java/time/</guid>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</guid>
       <description>不同的时间 时区 时间的表示方式  不同的时间  GMT UTC CST  GMT(Greenwich Mean Time), 格林尼治时间, 是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.
 UTC(Coordinated Universal Time), 协调世界时
 GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确, UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标, 以及以秒为单位的国际原子时所综合精算而成的时间.
