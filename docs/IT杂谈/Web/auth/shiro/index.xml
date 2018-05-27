@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shiro on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/</link>
+    <description>Recent content in shiro on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 02 May 2018 06:03:49 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/web/auth/shiro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shiro --- 认证</title>
+      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authentication/</link>
+      <pubDate>Wed, 02 May 2018 06:03:49 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiro --- 鉴权</title>
+      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authorization/</link>
+      <pubDate>Wed, 02 May 2018 06:03:35 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/authorization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiro</title>
+      <link>/it%E6%9D%82%E8%B0%88/web/auth/shiro/shiro/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/web/auth/shiro/shiro/</guid>
+      <description> 大概的处理流程:
+ Shiro Filter 获取token 使用token来进行Subject.login 通过Realm.supports来找到对应的Realm 将token传递给Realm.doGetAuthenticationInfo, 进行认证, 获取认证后的信息 将获取到的认证后的信息传递给Realm.doGetAuthorizationInfo, 进行鉴权, 获取角色和权限信息  Shiro的拦截器Filter 配置在ShiroFilterFactoryBean中
+Reference  跟我学Shiro  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csharp on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/language/csharp/</link>
+    <description>Recent content in csharp on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/language/csharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Async Programming Pattern</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/async-programming/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/async-programming/</guid>
+      <description>&lt;p&gt;C#的异步编程模型
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C# Generic</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/generic/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/generic/</guid>
+      <description>&lt;hr /&gt;
+
+&lt;p&gt;Official Site &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/512aeb7t.aspx&#34;&gt;C# Generic&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C# Regex Expression</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/regex/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/regex/</guid>
+      <description>&lt;p&gt;C#使用Regex类来进行正则处理, 来自&lt;strong&gt;System.Text.RegularExpressions&lt;/strong&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>C# Serialization</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/serialization/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/serialization/</guid>
+      <description>&lt;p&gt;Serialization is used to allow data to be easily stored and transferred.&lt;/p&gt;
+
+&lt;p&gt;It has tow directions
+- Serialize, convert object into formatted data
+- Deserialize, convert formatted data into object&lt;/p&gt;
+
+&lt;p&gt;Remoting uses serialization to pass objects &amp;ldquo;&lt;strong&gt;by value&lt;/strong&gt;&amp;ldquo;
+from one computer or application domain to another.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Concurrency - [Thread][Managed Threading]</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/thread/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/thread/</guid>
+      <description>&lt;p&gt;.Net provides some &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh156548(v=vs.110).aspx&#34;&gt;Concurrency Mechanisms&lt;/a&gt; such like &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/3e8s7xdd(v=vs.110).aspx&#34;&gt;Managed Thread&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/configuration/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/configuration/</guid>
+      <description>&lt;p&gt;Configuration Managemnet Implement in C#.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dispose Pattern</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/dispose-pattern/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/dispose-pattern/</guid>
+      <description>&lt;p&gt;Developers must be careful when using such system resources,
+because they must be released after they have been acquired and used.&lt;/p&gt;
+
+&lt;p&gt;So we need use &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/b1yfkh5e.aspx&#34;&gt;Dispose Pattern&lt;/a&gt;
+to help release these resources.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Event &amp;&amp; Delegate</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/event-delegate/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/event-delegate/</guid>
+      <description>&lt;p&gt;Events in the .NET Framework are based on the delegate model.
+The delegate model follows the observer design pattern,
+which enables a subscriber to register with, and receive notifications from, a provider.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL Programming</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/mysql-programming/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/mysql-programming/</guid>
+      <description>&lt;p&gt;介绍C#中如何使用MySQL Connect和MySQL进行交互
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stream</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/stream/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/stream/</guid>
+      <description>&lt;p&gt;C#中的&lt;a href=&#34;https://msdn.microsoft.com/en-US/library/k3352a4t.aspx&#34;&gt;Stream处理机制&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;System.IO&lt;/strong&gt; namespace contains types related to stream read/write.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Type System</title>
+      <link>/it%E6%9D%82%E8%B0%88/language/csharp/type-system/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/language/csharp/type-system/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/zcx1eb1e.aspx&#34;&gt;Type System&lt;/a&gt; in C#
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

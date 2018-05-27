@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Framework on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/framework/</link>
+    <description>Recent content in Framework on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/framework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Real-Time Server Framework - Photon</title>
+      <link>/it%E6%9D%82%E8%B0%88/framework/photon/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/framework/photon/</guid>
+      <description>Photon可用于构建实时性的游戏服务器。 可用于构建Load Balance或者MMO Server。
+Official Site: https://www.photonengine.com/en-US/ Basic Knowledge ApplicationBase It used to set up an server application and create connection peers.
+Importance Interface: - PeerBase CreatePeer(InitRequest initRequest), when a new connection comes, this function will be raised. - void Setup() - void TearDown()
+Connect Peer It represents a connection with server application. Process all communications and status updates in peer.
+Each kind of peer should inherit from PeerBase. There are some different kind of Peers: - ClientPeer, Client-Server Peer + Peer - S2SPeerBase, Server-Server Peer + InboundS2SPeer + OutboundS2SPeer</description>
+    </item>
+    
+  </channel>
+</rss>

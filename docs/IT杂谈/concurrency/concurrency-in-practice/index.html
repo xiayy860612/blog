@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86bbq/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/concurrency/">Concurrency</a>
+
+            
+            <span class="breadcrumb-item active">Concurrency in Practice</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Concurrency in Practice</h1>
+            </header>
+            <br />
+            <article><p>介绍如何安全使用并发，以及哪些情况是不安全的用例。
+</p>
+
+<hr />
+
+<h2 id="线程安全类的三个基本要素">线程安全类的三个基本要素</h2>
+
+<ul>
+<li>找出构成对象状态的所有变量</li>
+<li>找出约束状态变量的不变性条件，先验条件，后验条件</li>
+<li>建立对象状态的并发访问管理策略</li>
+</ul>
+
+<h2 id="非线程安全用例">非线程安全用例</h2>
+
+<ul>
+<li>“读改写”以及“先检查后执行”不是原子操作，会发生<strong>竞态条件</strong>。</li>
+<li>在缺乏足够同步的情况下，<strong>重排序</strong>会导致无法预测对内存操作的执行顺序。</li>
+<li>当某个不应该发布的对象被发布时，就会破坏线程的安全性，这种情况称为<strong>逸出</strong>。</li>
+<li>如果this引用在构造过程中逸出，这种对象被认为是不正确的构造。</li>
+</ul>
+
+<h2 id="实现线程安全的方式">实现线程安全的方式</h2>
+
+<ul>
+<li>无状态对象</li>
+<li>原子操作
+
+<ul>
+<li>互斥锁/独占锁，使共享可变对象以串行形式被访问，而不是并发访问。
+在保证不变条件下，尽量缩小同步代码块，避免性能的损失。</li>
+<li>可重入锁</li>
+</ul></li>
+<li>实例封闭(Instance Confinement), 将数据<strong>封装</strong>在对象内部，可以将数据的访问限制在对象的方法上，
+从而更容易确保线程在访问数据时总能持有正确的锁
+
+<ul>
+<li>Java监视器模式</li>
+</ul></li>
+<li>线程封闭(Thread Confinement), 不共享数据，仅在单个线程内访问数据
+
+<ul>
+<li>Ad-hoc线程，尽量少用，封闭性的职责完全由程序实现来承担，所以十分脆弱。</li>
+<li>栈封闭， 只能通过局部变量才能访问对象</li>
+<li>ThreadLocal， 使每个线程能够维护只属于自己的那份数据</li>
+<li>克隆，克隆的副本被封闭在线程中，其他线程就无法操作这个副本</li>
+<li>串行线程封闭，将一个对象的所有权从一个线程安全的转移到另一个线程，同一时刻只有一个线程独占对象</li>
+</ul></li>
+<li>不可变对象，即只读共享
+
+<ul>
+<li>对象在被创建后其状态不会再被修改</li>
+<li>对象的所有域都是常量</li>
+<li>对象呗正确创建，即构造期间未发布出去</li>
+</ul></li>
+<li>存在先验条件时，必须要等到先验条件为真时，再继续执行操作
+
+<ul>
+<li>阻塞队列(Blocking Queue)</li>
+<li>信号量(Semaphore)</li>
+</ul></li>
+<li>当一个类由多个独立且线程安全的状态变量组成，并且所有的操作都不包含无效状态转换，
+那么就可以将线程安全委托给底层的状态变量。</li>
+</ul>
+
+<h2 id="加锁机制-同步策略">加锁机制/同步策略</h2>
+
+<ul>
+<li>互斥锁/独占锁</li>
+<li>可重入锁</li>
+<li>分拆锁 (Lock Splitting) 和分段锁 (Lock Striping)</li>
+<li>生产者-消费者模式，使用阻塞队列来管理资源，能抑制并防止产生过多的工作项， 使应用程序在负荷过载的情况下变得更加健壮。
+
+<ul>
+<li>Executor框架</li>
+</ul></li>
+<li>工作窃取模式(Work Stealing)，使用双端队列(Deque)</li>
+<li>信号量(Semaphore)，控制同时访问资源的数量，当可访问的资源被用完时，会阻塞访问请求，直到有可访问的资源为止
+
+<ul>
+<li>资源池</li>
+<li>对容器施加边界</li>
+</ul></li>
+<li>栅栏(Barrier)，阻塞一组线程直到某个事件发生，即所有线程达成一个协议，必须等到所有线程都满足该协议后才能继续执行
+
+<ul>
+<li>当所有阻塞线程被释放后，栅栏会被重置以便下次使用</li>
+<li>用于将一个问题分解成一定数量的子问题，为每个子问题分配一个线程来执行，等到所有线程执行完毕后将结果进行合并</li>
+</ul></li>
+<li>闭锁(Latch)，当闭锁到达结束状态后，其他相关的线程才能继续执行
+
+<ul>
+<li>闭锁是一次性对象，道道结束状态后，其状态无法重置</li>
+<li>用于等待事件，用来确保某些活动直到其他活动完成后才能继续执行</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<ul>
+<li>要使对象是线程安全的，需要采用<strong>同步机制</strong>来<strong>协同</strong>对对象<strong>可变状态</strong>的访问。</li>
+<li>当多个线程访问某个类时，不管运行时环境采用何种调度方式或者这些线程将如何交替执行，
+并且在主调代码中不需要任何额外的同步或协同，这个类都能表现出正确的行为，
+那么这个类就是线程安全的。</li>
+<li>在线程安全类中封装必要的同步机制，调用者无须进一步采取同步机制。</li>
+<li>将所有的可变状态封装在对象内部，并通过内置锁对所有访问可变状态的代码路径进行同步，
+使得该对象被串行访问，而不是并发访问。</li>
+<li>针对同一不变性条件中的多个变量，需要由同一个锁来保护。</li>
+<li>为了确保多个线程之间对内存写入操作的可见性，必须使用同步机制。</li>
+<li>通过使用<strong>封装技术</strong>，可以使得在不对整个程序进行分析的情况下就可以判断一个类是否线程安全。</li>
+<li>当类中的状态彼此独立时，可以将类的线程安全<strong>委托</strong>给这些独立的状态，
+只要保证这些独立的状态时线程安全的，那么这个类也就是线程安全的。</li>
+<li>使用扩展方法来实现同步策略，比直接将代码添加到类中更加脆弱，如果底层的类改变了同步策略，那么子类就有可能被破坏。</li>
+<li>以组合的方式通过封装状态变量，并提供额外的加锁机制来实现线程安全，虽然额外的同步层会导致轻微的性能损失，但更加健壮。</li>
+<li>在文档中说明同步策略，有助于维护。</li>
+<li>同步容器将所有对容器状态的访问都串行化以实现线程安全，代价是严重降低并发性，并会导致竞争激烈，使吞吐量严重降低。</li>
+<li>使用并发容器来替代同步容器，以提高性能并降低风险。</li>
+<li>减小锁的粒度，来提高可伸缩性，提高并发性。</li>
+<li>仅当迭代器操作远远多于修改操作时，才使用<a href="https://en.wikipedia.org/wiki/Copy-on-write">CopyOnWrite</a>容器.</li>
+</ul>
+
+<hr />
+
+<ul>
+<li>行为良好的软件能完善地处理失败、关闭和取消等过程。当需要停止时，首先会先清除当前正在执行的工作，然后再结束。</li>
+
+<li></li>
+
+<li><p>竞态条件(Race Condition), 由于不恰当的执行时序而出现不正确的结果。
+当某个计算的正确性取决于多个线程的交替执行时序时，就会发生竞态条件。</p></li>
+
+<li><p>重排序(Reordering), 在没有同步的情况下，编译器、处理器以及运行时等
+都有可能对操作的执行顺序进行调整。</p></li>
+
+<li><p><a href="http://www.ibm.com/developerworks/cn/java/j-lo-lock/">如何聪明地使用锁</a></p></li>
+</ul>
+
+<hr /></article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

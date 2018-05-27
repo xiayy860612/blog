@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Editor on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/tools/editor/</link>
+    <description>Recent content in Editor on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/tools/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atom</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/editor/atom/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/atom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python之Sublime Text3 配置</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/editor/python-env-sublime3/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/python-env-sublime3/</guid>
+      <description>&lt;p&gt;Python在Sublime Text3中的配置
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text3 环境配置</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/editor/sublime-text3-config/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/editor/sublime-text3-config/</guid>
+      <description>&lt;p&gt;Sublime Text3 环境配置
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

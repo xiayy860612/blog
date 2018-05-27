@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86bbq/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/language/">Language</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/language/csharp/">csharp</a>
+
+            
+            <span class="breadcrumb-item active">Dispose Pattern</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Dispose Pattern</h1>
+            </header>
+            <br />
+            <article><p>Developers must be careful when using such system resources,
+because they must be released after they have been acquired and used.</p>
+
+<p>So we need use <a href="https://msdn.microsoft.com/en-us/library/b1yfkh5e.aspx">Dispose Pattern</a>
+to help release these resources.</p>
+
+<p></p>
+
+<p>Garbage collector (GC) will release Managed memory (memory allocated using the C# operator new) automatically.</p>
+
+<p>Resources other than managed memory are referred to unmanaged resources, they should be released by manual.</p>
+
+<p>2 ways to reclaim unmanaged resources
+- override virutal method <strong>Finalize</strong>
+- Implement <strong>IDisposable</strong> for Dispose Pattern</p>
+
+<h2 id="finalize">Finalize</h2>
+
+<p>Drawback
+- It&rsquo;s called by GC in undeterminde time, developers can&rsquo;t be sure when unmanaged resources are released.
+- After Finalize is called by GC, the memory of unmanaged resources&rsquo; objects won&rsquo;t released at once,
+it will be delayed to next collection.</p>
+
+<p>Finalize is not comfortable for reclaim unmanaged resources asap.</p>
+
+<h2 id="idisposable">IDisposable</h2>
+
+<p>It provides a manual way to release unmanaged resources as soon as they are not needed.</p>
+
+<p>It provides <strong>GC.SuppressFinalize</strong> method that tell GC that an object was manually disposed of
+and does not need to be finalized anymore, in that case object’s memory can be reclaimed earlier.</p>
+
+<p>The objects are <strong>finalized in an unpredictable order</strong> and so they,
+or any of their dependencies, might already have been finalized.</p>
+
+<p>Important Rules:
+- (<strong>DO</strong>) Implement <a href="https://msdn.microsoft.com/en-us/library/b1yfkh5e.aspx#basic_pattern">Basic Dispose Pattern</a>
+on types containing <strong>instances of disposable types</strong>.
+- (<strong>DO</strong>) Implement <a href="https://msdn.microsoft.com/en-us/library/b1yfkh5e.aspx#basic_pattern">Basic Dispose Pattern</a>
+and override <strong>Finalize</strong> on types holding resources that need to be freed explicitly and that do not have finalizers.
+- (<strong>CONSIDER</strong>) Implementing <a href="https://msdn.microsoft.com/en-us/library/b1yfkh5e.aspx#basic_pattern">Basic Dispose Pattern</a> on classes
+that not hold unmanaged resources or disposable objects but are likely to have subtypes that do.
+- (<strong>CONSIDER</strong>) Providing method Close() and invoked in Dispose(), if close is standard terminology in the area.
+- (<strong>DO</strong>) Not raise exception in Dispose.
+If Dispose could raise an exception, further finally-block cleanup logic will not execute.
+- (<strong>DO</strong>) If base class already is finalizable and implements Basic Dispose Pattern,
+you should not override Finalize again.
+- (<strong>DO</strong>) using resource wrappers such as <strong>SafeHandle</strong> to encapsulate unmanaged resources where possible,
+in which case a finalizer becomes unnecessary because the wrapper is responsible for its own resource cleanup.
+coz there is a real cost associated with instances with finalizers, from both a performance and code complexity standpoint.
+- (<strong>DO</strong>) Make a type finalizable if the type is responsible for releasing an unmanaged resource that does not have its own finalizer.
+- (<strong>DO</strong>) Make your Finalize method protected.</p>
+
+<h3 id="basic-dispose-pattern">Basic Dispose Pattern</h3>
+
+<pre><code>public class DisposableResourceHolder : IDisposable {  
+    private SafeHandle resource; // handle to a resource  
+
+    public DisposableResourceHolder(){  
+        this.resource = ... // allocates the resource  
+    }  
+
+    // Impl IDisposable Below parts
+    public void Dispose(){  
+        Dispose(true);  
+        GC.SuppressFinalize(this);  
+    }  
+
+    // finalizer
+    ~ DisposableResourceHolder()
+    {
+        Dispose(false);  
+    }
+
+    // allow the Dispose(bool) method to be called more than once. 
+    // The method might choose to do nothing after the first call.
+    bool disposed = false; 
+
+    protected virtual void Dispose(bool disposing){  
+        if(disposed) return;
+        if (disposing){  
+            // Unmanaged resources
+            if (resource!= null) resource.Dispose();  
+        }  
+        // managed resources
+        ...
+
+        disposed = true; 
+    }
+}  
+</code></pre>
+
+<p>Parameter <strong>disposing</strong> of IDisposable.Dispose method is true when invoked by Dispose, false by Finalize.</p></article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

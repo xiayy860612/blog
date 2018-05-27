@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swagger on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/tools/swagger/</link>
+    <description>Recent content in swagger on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Sat, 19 May 2018 16:22:55 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/tools/swagger/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>swagger离线文档</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Sat, 19 May 2018 16:22:55 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
+      <description> 目前只可兼容springfox-swagger:2.6.1
+Reference  SpringBoot项目生成RESTfull API的文档  </description>
+    </item>
+    
+    <item>
+      <title>Swagger 快速入门</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger-basic/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/swagger/swagger-basic/</guid>
+      <description>Annotations</description>
+    </item>
+    
+  </channel>
+</rss>

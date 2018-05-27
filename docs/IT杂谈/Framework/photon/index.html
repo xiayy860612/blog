@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86bbq/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/framework/">Framework</a>
+
+            
+            <span class="breadcrumb-item active">Real-Time Server Framework - Photon</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Real-Time Server Framework - Photon</h1>
+            </header>
+            <br />
+            <article>
+
+<p>Photon可用于构建实时性的游戏服务器。
+可用于构建Load Balance或者MMO Server。</p>
+
+<p>Official Site: <a href="https://www.photonengine.com/en-US/">https://www.photonengine.com/en-US/</a>
+<!-- more --></p>
+
+<h2 id="basic-knowledge">Basic Knowledge</h2>
+
+<h3 id="applicationbase">ApplicationBase</h3>
+
+<p>It used to set up an server application
+and create connection peers.</p>
+
+<p>Importance Interface:
+- PeerBase CreatePeer(InitRequest initRequest),
+when a new connection comes, this function will be raised.
+- void Setup()
+- void TearDown()</p>
+
+<h3 id="connect-peer">Connect Peer</h3>
+
+<p>It represents a connection with server application.
+Process all communications and status updates in peer.</p>
+
+<p>Each kind of peer should inherit from <strong>PeerBase</strong>.
+There are some different kind of Peers:
+- ClientPeer, Client-Server Peer
+    + Peer
+- S2SPeerBase, Server-Server Peer
+    + InboundS2SPeer
+    + OutboundS2SPeer</p>
+
+<h3 id="peerbase-ondisconnect">PeerBase::OnDisconnect</h3>
+
+<p>When connected peer is disconnect, this function will be raised.</p>
+
+<h3 id="peerbase-onoperationrequest">PeerBase::OnOperationRequest</h3>
+
+<p>Process Operation from connected peer.</p>
+
+<p>Operations mostly are from Client to Server.
+Also game server to master server.</p>
+
+<p>Developers should define uniform <strong>OperationCode</strong> for each Operation.</p>
+
+<h3 id="s2speerbase-onevent">S2SPeerBase::OnEvent</h3>
+
+<p>When server peer in master server received events from game server,
+this function will be raised.</p>
+
+<h3 id="peer-setcurrentoperationhandler">Peer::SetCurrentOperationHandler</h3>
+
+<p>Set an operation handler to process operations from client peer.</p>
+
+<p>Developers should implement the interface of <strong>IOperationHandler</strong>.</p>
+
+<h3 id="poolfiber">PoolFiber</h3>
+
+<p>Use it to execute some actions in async way.</p>
+
+<h3 id="logmanager">LogManager</h3>
+
+<p>Use it to track log.</p>
+
+<p>It&rsquo;s implements based on <a href="https://logging.apache.org/log4net/">log4net</a>.</p>
+
+<h3 id="configuration-manager">Configuration Manager</h3>
+
+<p>Use <strong>ApplicationSettingsBase</strong> to serialize configuration file
+with &ldquo;applicationSettings&rdquo; tag.</p>
+
+<h3 id="exception-handler">Exception Handler</h3>
+
+<h3 id="channel">Channel</h3>
+
+<p>It separates messages from client peer into multiple channels,
+each being sequenced independently.</p>
+
+<h3 id="custom-authentication">Custom Authentication</h3>
+
+<p>Developers could use its own authentication server
+and integrated into Photon Server.</p>
+
+<h3 id="web-service-integration-with-photon-server">Web Service Integration with Photon Server</h3>
+
+<p>Developers could use Webhooks and WebRPC to extend Photon Server.</p>
+
+<h4 id="webhooks">Webhooks</h4>
+
+<p>It used to process individual tasks called automatically
+by Photon Server where needed.</p>
+
+<p>It could only be used by Photon Server.</p>
+
+<h4 id="webrpc">WebRPC</h4>
+
+<p>It used to integrate external services with Photon server.
+Client can ask Photon server to fetch data
+from an external web service by WebRPC.</p>
+
+<p>It could be used by Photon Server and Clients.</p>
+
+<h4 id="serialization">Serialization</h4>
+
+<p>Photon provides a way to serialize/deserialize message data into binary.</p>
+
+<h2 id="loadbalancing">Loadbalancing</h2>
+
+<h3 id="master-server">Master Server</h3>
+
+<p>Requirements
+- Maintains connected servers and monitor their status
+- Maintains Lobby List
+- As a load balancer, get available game for client
+- Create auth token for connected clients</p>
+
+<h4 id="loadbalancer">LoadBalancer</h4>
+
+<p>Monitor server state and Use it to get an available server to set up games.</p>
+
+<h4 id="gameapplication">GameApplication</h4>
+
+<p>It maintains all games and take charge of creating game.</p>
+
+<h4 id="applobby">AppLobby</h4>
+
+<p>It maintains the games assigned to this lobby.</p>
+
+<h4 id="gamestate">GameState</h4>
+
+<p>It represents a game and and contains the game server info
+which used to set up the game.</p>
+
+<p>It also maintains the connected clients in it.</p>
+
+<h4 id="customauthhandler">CustomAuthHandler</h4>
+
+<p>It used to authorize connected clien if it&rsquo;s available.</p>
+
+<h3 id="game-server">Game Server</h3>
+</article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

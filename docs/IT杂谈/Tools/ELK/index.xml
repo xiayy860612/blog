@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ELK on Amos的Blog</title>
+    <link>/it%E6%9D%82%E8%B0%88/tools/elk/</link>
+    <description>Recent content in ELK on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/it%E6%9D%82%E8%B0%88/tools/elk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ELK-Filebeat</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/elk/filebeat/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/elk/filebeat/</guid>
+      <description>&lt;p&gt;Filebeat is a log data shipper.
+Installed as an agent on your servers,
+Filebeat monitors the log directories or specific log files,
+tails the files, and forwards them either to Elasticsearch or Logstash for indexing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/IT杂谈/Tools/ELK/filebeat.png&#34; alt=&#34;Filebeat&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Logstash</title>
+      <link>/it%E6%9D%82%E8%B0%88/tools/elk/logstash/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/it%E6%9D%82%E8%B0%88/tools/elk/logstash/</guid>
+      <description>&lt;p&gt;学习Logstash
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

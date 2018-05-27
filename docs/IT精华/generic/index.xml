@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generic on Amos的Blog</title>
+    <link>/it%E7%B2%BE%E5%8D%8E/generic/</link>
+    <description>Recent content in Generic on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    
+	<atom:link href="/it%E7%B2%BE%E5%8D%8E/generic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

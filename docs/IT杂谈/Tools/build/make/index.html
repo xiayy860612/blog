@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86bbq/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/tools/">Tools</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/tools/build/">build</a>
+
+            
+            <span class="breadcrumb-item active">GNU make</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>GNU make</h1>
+            </header>
+            <br />
+            <article><p>通过配置Makefile, 使用make对C++工程进行构建
+</p>
+
+<p>默认的情况下,make命令会在当前目录下按顺序找寻文件名为“GNUmakefile”,“makefile”,“Makefile”的文件,找到了就解析这个文件.
+推荐最好使用“Makefile”这个文件名.</p>
+
+<p>当文件名不是Makefile时, Makefile文件比较常用的后缀有&rdquo;mk&rdquo;, &ldquo;make&rdquo;等.</p>
+
+<h2 id="grammar">Grammar</h2>
+
+<pre><code>targets : prerequisites
+        command
+        ...
+</code></pre>
+
+<p>Recommend to declare <strong>fake target</strong> into <strong>.PHONY</strong></p>
+
+<p>if next command depends on previous command, these commands should be one line and split with &ldquo;<strong>;</strong>&rdquo;.</p>
+
+<p>When any error raise, make will be interrupted.</p>
+
+<p>Use &ldquo;<strong>-</strong>&rdquo; before command could ignore error raised by command and make will go on.</p>
+
+<p>make支持三个通配符：“*”，“?”和“~”。</p>
+
+<h3 id="variant">Variant</h3>
+
+<ol>
+<li><p>Variant should be initialized when declaration, use <strong>=</strong>, <strong>:=</strong> to initialization.
+the difference is <strong>=</strong> could use variants defined later, <strong>:==</strong> only use defined variants.</p>
+
+<p>objs = test.o foo.o</p></li>
+
+<li><p>Invoke variant by <strong>$(variant) or ${variant}</strong>, use its value to replace. <strong>variant</strong> is only a placeholder.</p></li>
+</ol>
+
+<h4 id="auto-variant">Auto Variant</h4>
+
+<ul>
+<li>$?, 比目标新的依赖目标的集合</li>
+<li>$@, 目标文件集</li>
+<li>$&lt;, 依赖目标prerequist</li>
+</ul>
+
+<h3 id="function">Function</h3>
+
+<pre><code>$(&lt;function&gt; &lt;arguments&gt;)
+</code></pre>
+
+<p>arguments is splited by <strong>,</strong></p>
+
+<h4 id="command-macro">Command Macro</h4>
+
+<p>Use <strong>define/endef</strong> to define a command which could be resued.</p>
+
+<pre><code>define &lt;command name&gt;
+command
+...
+endef
+</code></pre>
+
+<h3 id="自动推导-auto-deduction">自动推导(Auto-Deduction)</h3>
+
+<h3 id="makefile-include">Makefile Include</h3>
+
+<p>为了让构建更加清晰和更好的维护, 将构建拆分成多个Makefiles, 然后根据需求通过组合进行构建.</p>
+
+<pre><code># filename可以是当前操作系统Shell的文件模式, 可以包含路径和通配符.
+# 包含多个文件时, 用一个或多个空格隔开
+include &lt;filename&gt;;
+</code></pre>
+
+<h4 id="文件搜索">文件搜索</h4>
+
+<p>文件搜索路径在<strong>VPATH</strong>变量中设置, 由&rdquo;:&ldquo;分割.</p>
+
+<pre><code>VPATH = src:../headers
+</code></pre>
+
+<p>或者在<strong>vpath</strong>关键字设置</p>
+
+<pre><code>vpath &lt;pattern&gt; &lt;directories&gt;
+
+# Example
+vpath %.c foo
+vpath %.c blish
+</code></pre>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents">GNU make</a></li>
+<li><a href="http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile">跟我一起写Makefile</a></li>
+</ul></article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

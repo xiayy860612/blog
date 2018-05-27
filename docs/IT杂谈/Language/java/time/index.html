@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/it%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86bbq/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/language/">Language</a>
+
+
+<a class="breadcrumb-item" href="/it%E6%9D%82%E8%B0%88/language/java/">java</a>
+
+            
+            <span class="breadcrumb-item active">时间的探索之旅 --- Java篇</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>时间的探索之旅 --- Java篇</h1>
+            </header>
+            <br />
+            <article>
+
+<ul>
+<li>不同的时间</li>
+<li>时区</li>
+<li>时间的表示方式</li>
+</ul>
+
+<h2 id="不同的时间">不同的时间</h2>
+
+<ul>
+<li>GMT</li>
+<li>UTC</li>
+<li>CST</li>
+</ul>
+
+<p>GMT(Greenwich Mean Time), 格林尼治时间,
+是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.</p>
+
+<p>UTC(Coordinated Universal Time), 协调世界时</p>
+
+<p>GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确,
+UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标,
+以及以<strong>秒</strong>为单位的国际原子时所综合精算而成的时间.</p>
+
+<p><strong>UTC比GMT来得更加精准</strong>, 一般都使用UTC时间, 而且在使用时, 两者一般被认为是相同的表示方式.</p>
+
+<p>CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间</p>
+
+<h2 id="时区">时区</h2>
+
+<p>人们规定以子午线为中心，向东西两侧延伸，每 15 度划分一个时区，刚好是 24 个时区。
+然后因为一天有 24 小时，地球自转一圈是 360 度，360 度 / 24 小时 = 15 度/小时，
+所以每差一个时区，时间就差一个小时。</p>
+
+<p>新纪元时间(epoch)的起点为穿过格林威治天文台的本初子午线所处时区(0时区)的<strong>1970.1.1 00:00:00</strong>.</p>
+
+<p>人类时间:</p>
+
+<ul>
+<li>本地时间, 基于本地时区的时间, 包括本地的日期和时间</li>
+<li>时区时间, 包括日期, 时间以及时区</li>
+</ul>
+
+<h2 id="时间的表示方式">时间的表示方式</h2>
+
+<ul>
+<li>时间戳, 从新纪元时间(epoch)到现在的时间差, 一般用毫秒ms来度量</li>
+<li>ISO 8601, 格式<code>YYYY-MM-DDTHH:mm:ss.sssZ</code></li>
+<li>RFC822/RFC1123, 格式<code>Wed Mar 25 2015 09:56:24 GMT+0100</code></li>
+</ul>
+
+<h3 id="iso-8601">ISO 8601</h3>
+
+<p><code>T</code>表示UTC时区, 如果使用<code>空格且没有设置时区</code>则为本地时区, 即系统设置的时区
+<code>Z</code>表示的是UTC时区</p>
+
+<p>时区判断的优先级: Z(指定时区) -&gt; T(UTC) -&gt; 本地</p>
+
+<ul>
+<li>如果Z指定了时区, 则时间为该时区的时间</li>
+<li>如果有T, 则为UTC时区, 即GMT+0时区</li>
+<li>如果都没有, 则为本地时区, 即系统设置的时区</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://github.com/xiayy860612/JavaResearch/tree/master/javaresearch-time">javaresearch-time源码</a></li>
+<li><a href="https://segmentfault.com/a/1190000004292140">关于“时间”的一次探索</a></li>
+</ul>
+</article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
