@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Tools/build/</link>
+    <description>Recent content in build on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Tools/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CMake</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/cmake/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/cmake/</guid>
+      <description>&lt;p&gt;Study &lt;a href=&#34;https://cmake.org/&#34;&gt;CMake&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GNU make</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/make/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/make/</guid>
+      <description>&lt;p&gt;通过配置Makefile, 使用make对C++工程进行构建
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gradle</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/build/gradle/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/build/gradle/</guid>
+      <description>&lt;p&gt;Study &lt;a href=&#34;https://gradle.org/&#34;&gt;Gradle&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

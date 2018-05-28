@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+    <title>Amos的Blog</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86BBQ/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Framework/">Framework</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Framework/asp.net/">asp.net</a>
+
+            
+            <span class="breadcrumb-item active">Model Binding</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Model Binding</h1>
+            </header>
+            <br />
+            <article><p>Research <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding">Model Binding</a> in ASP.Net Core
+</p>
+
+<h2 id="route">Route</h2>
+
+<ol>
+<li>Receive HTTP Request</li>
+<li>Router finds related action of controller According URL and URL Template, <strong>URL route are not case sensitive</strong></li>
+<li>Model Binding and then route to exact action of controller according to action parameters</li>
+</ol>
+
+<h2 id="source-of-model-binding-in-request">Source Of Model Binding in Request</h2>
+
+<p>Model Binding will try to bind request data to the action parameters by <strong>name</strong>.</p>
+
+<p>Default Data source of Model Binding in order:
+1. Form values, form values that go in HTTP request using POST method
+2. Route values, matched values from comparing URL with URL Template of Routing
+3. Query strings, query string part of the URI</p>
+
+<p>All of data are stored as <strong>name-value pairs</strong>.</p>
+
+<p>For customized class, Model binding looks for the pattern <strong>parameter_name.property_name</strong>
+and bind values to <strong>public settable properties</strong>.</p>
+
+<p>Customized class for model binding must have a <strong>public default constructor</strong> and members to be <strong>public settable properties</strong>.</p>
+
+<p>For Collections, model binding looks for matches to <strong>parameter_name[index] or [index]</strong></p>
+
+<p>For Dictionary, model binding looks for matches to <strong>parameter_name[key] or [key]</strong></p>
+
+<p>If binding fails, MVC does not throw an error, check if binding success by querying <strong>ModelState.IsValid</strong> property.</p>
+
+<p>Special data source
+- IFormFile, IEnumerable<IFormFile>: One or more uploaded files that are part of the HTTP request.
+- CancelationToken: Used to cancel activity in asynchronous controllers.</p>
+
+<h3 id="control-model-binding-behavior-from-different-data-source">Control model binding behavior from different data source</h3>
+
+<ul>
+<li>[BindRequired]: This attribute adds a model state error if binding cannot occur.</li>
+<li>[BindNever]: Tells the model binder to never bind to this parameter.</li>
+<li>[FromHeader], [FromQuery], [FromRoute], [FromForm]: Use these to specify the exact binding source you want to apply.</li>
+<li>[FromServices]: This attribute uses dependency injection to bind parameters from services.</li>
+<li>[FromBody]: Use the configured formatters to bind data from the request body.
+The formatter is selected based on content type of the request. <strong>There can be at most one parameter per action.</strong></li>
+<li>[ModelBinder]: Used to override the default model binder, binding source and name.</li>
+</ul>
+
+<p>Once model binding is complete, Validation occurs.</p>
+
+<p>Many useful validation attributes can be found in the <strong>System.ComponentModel.DataAnnotations</strong> namespace.</p></article>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

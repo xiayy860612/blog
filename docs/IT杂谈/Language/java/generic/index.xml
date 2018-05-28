@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generic on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/generic/</link>
+    <description>Recent content in generic on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/generic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java --- Generic泛型</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/generic/generic/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/generic/generic/</guid>
+      <description>泛型的好处:
+ 更好的可读性 更好的安全性  泛型的类型参数使的程序具有更好的可读性和安全性.
+类型变量是泛型的固定类型, 用来指示泛型中所使用的具体类型.
+泛型方法的类型变量放在修饰符的后面, 返回类型的前面.
+class ArrayAlg { public static &amp;lt;T&amp;gt; getMid(T arg) {...} } // 调用时, 在方法名前的尖括号中放入具体的类型 ArrayAlg.&amp;lt;String&amp;gt;getMid(&amp;quot;hello&amp;quot;); // 同上, 编译器有足够信息进行类型推断 ArrayAlg.getMid(&amp;quot;hello&amp;quot;);  类型变量的限定
+// 单个限定 T extends Type1 // 多个限定 T extends Type1 &amp;amp; Type2  Java的继承中, 类型变量可以有多个接口类型, 但最多只能有一个类. 如果用类作为限定, 必须放在限定列表第一个.
+Java虚拟机没有泛型类型对象, 都是普通类.
+Java通过类型擦除的方式提供对泛型的支持.
+当定义一个泛型类型时, 都会产生一个相应的原始类型(raw type), 原始类型就是删去类型参数后的类型名, 擦除类型变量并替换为限定类型, 如果没有限定类型, 则使用Object作为限定类型.
+// Java定义的类型 @Getter @Setter public class Pair&amp;lt;T&amp;gt; { private T first; private T second; public Pair() { this.</description>
+    </item>
+    
+  </channel>
+</rss>

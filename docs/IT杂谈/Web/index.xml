@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Web/</link>
+    <description>Recent content in Web on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Mon, 30 Apr 2018 13:28:12 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RESTful</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/restful/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/restful/</guid>
+      <description> Reference </description>
+    </item>
+    
+    <item>
+      <title>SOAP Protocol</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/soap/</link>
+      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/soap/</guid>
+      <description>&lt;p&gt;SOAP(Simple Object Access Protocol), 简单对象访问协议,
+是交换数据的一种协议规范, 使用在web service中交换带结构信息.&lt;/p&gt;
+
+&lt;p&gt;目前SOAP 1.1版是业界共同的标准,属于第二代的XML协定(第一代具代表性的技术为XML-RPC以及WDDX).
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
