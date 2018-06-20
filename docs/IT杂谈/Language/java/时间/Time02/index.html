@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Amos的Blog</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E4%B9%A6%E5%8D%95/">书单</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/">Language</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/java/">java</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/">时间</a>
+
+            
+            <span class="breadcrumb-item active">Java --- 时间探索</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Java --- 时间探索</h1>
+            </header>
+            <br />
+            <article>
+
+<p>Java 8 引入了新的时间模块java.time,
+以穿过英国格林尼治天文台的本初子午线所处时区(UTC+0时区)的
+<strong>1970.1.1 00:00::00</strong>作为新纪元的时间原点, 通常称为epoch时间.</p>
+
+<p>而Java的Instant表示以epoch为原点的时间线上的某个时间点, 是一个绝对时间.</p>
+
+<pre><code>见源码:
+
+public static Instant now() {
+    return Clock.systemUTC().instant();
+}
+</code></pre>
+
+<p>使用Duration来计算两个Instant之间的时间差.</p>
+
+<p>Java有三种种时间</p>
+
+<ul>
+<li>绝对时间, 以epoch为原点的时间间隔, 通常用ms来描述
+
+<ul>
+<li>System.currentTimeMillis</li>
+<li>Instant</li>
+</ul></li>
+<li>本地时间, 不包含时区信息, 只是纯粹的时间信息</li>
+<li>时区时间, 包含时间信息和时区信息,
+时区信息来源于<a href="http://www.iana.org/time-zones">IANA数据库</a></li>
+</ul>
+
+<p>本地时间+时区 =&gt; 时区时间 &lt;=&gt; Instant时间</p>
+
+<pre><code>// 本地时间
+LocalDateTime date = LocalDateTime.of(year, month, day, hour, 0);
+System.out.println(date);
+
+// 本地时间不包含将时区信息, 可设置为任意时区, 但时间信息不会发生变化
+ZonedDateTime zdt = date.atZone(ZoneId.of(&quot;UTC+9&quot;));
+System.out.println(zdt);
+assertEquals(hour, zdt.getHour());
+
+zdt = date.atZone(ZoneId.of(&quot;UTC+7&quot;));
+System.out.println(zdt);
+assertEquals(hour, zdt.getHour());
+</code></pre>
+
+<h2 id="时间的格式化">时间的格式化</h2>
+
+<p>两种比较常用的时间标准</p>
+
+<ul>
+<li>ISO8601, 格式<code>yyyy-MM-ddTHH:mm:ss.sssZ</code></li>
+<li>RFC822/RFC1123, 格式<code>Wed Mar 25 2015 09:56:24 GMT+0100</code></li>
+</ul>
+
+<p>关于这两种标准的说明, 请见:
+<a href="https://github.com/xiayy860612/pure-blog-content/blob/master/content/IT-Chat/Language/java/Time.md">时间的探索之旅 &mdash; Java篇</a></p>
+
+<p>Java8使用<strong>DateTimeFormatter</strong>来进行格式化时间.</p>
+
+<h2 id="java-util-date-java-sql-date">java.util.Date &amp;&amp; java.sql.Date</h2>
+
+<p>这俩个都是老的SDK里的时间模块, 其中java.sql.Date只用于sql语句而且只保存日期信息,
+过去我们一般都是用java.util.Date用来表示时间.</p>
+
+<p>java.util.Date如果没有显式设置时区的话, 默认使用系统设置的默认时区.</p>
+
+<pre><code>// 设置Date的默认时区
+TimeZone.setDefault(TimeZone.getTimeZone(ZoneId.of(&quot;GMT+7&quot;)));
+</code></pre>
+
+<p>设置时区差值字符串时使用<strong>GMT</strong>, 不要使用<strong>UTC</strong>,
+因为UTC有些库会解析不出来, 比如TimeZone.getTimeZone.</p>
+
+<p>SimpleDateFormat用来解析指定时区的时间,
+如果没有显式设置时区, 则使用系统时区.</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html">Java Formatter</a></li>
+<li><a href="https://blog.csdn.net/wangpeng047/article/details/8560690">java处理时区的注意事项</a></li>
+</ul>
+</article>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+        </div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

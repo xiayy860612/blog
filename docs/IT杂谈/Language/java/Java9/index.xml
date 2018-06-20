@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java9 on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java9/</link>
+    <description>Recent content in Java9 on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/Java9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java 9 新特</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java9/%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 06 Jun 2018 13:25:39 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Java9/%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description> Reference </description>
+    </item>
+    
+  </channel>
+</rss>

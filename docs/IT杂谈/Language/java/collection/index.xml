@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>collection on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/collection/</link>
+    <description>Recent content in collection on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/collection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java 探索 --- Collection</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/collection/collection/</link>
+      <pubDate>Fri, 08 Jun 2018 03:32:49 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/collection/collection/</guid>
+      <description>Java中集合类的基本接口为Collection接口.
+ List, 表示有序集合  ArrayList, 支持随机访问 LinkedList, 便于中间插入删除  Set  HashSet, 表示不重复无序集合, 可以快速查找元素, 通过自定义元素的hashCode和equals来去重 TreeSet, 有序集合, 通过自定义元素的Comparator接口来去重  Queue/Dequeue, 在队列头尾进行操作 Map, 存储键值对  HashMap TreeMap   Vector和ArrayList都是使用动态数组来实现, 但Vector是线程安全, 而ArrayList不是; 效率上ArrayList要优于Vector.
+Hashtable和HashMap拥有相同的接口, Hashtable是线程安全, HashMap不是. 如果有并发访问的需求, 使用ConcurrentHashMap.
+Collection通过使用Iterator迭代器来顺序访问集合中的元素, 元素被访问的顺序取决于集合类型.
+ Collection&amp;lt;String&amp;gt; collection = new ArrayList&amp;lt;&amp;gt;(); collection.add(&amp;quot;hello&amp;quot;); collection.add(&amp;quot;world&amp;quot;); Iterator&amp;lt;String&amp;gt; it = collection.iterator(); while (it.hasNext()) { String next = it.next(); System.out.println(next); }  在Collection中间位置添加元素需要通过Iterator来进行插入.
+ListIterator&amp;lt;String&amp;gt; listIterator = collection.listIterator(); listIterator.next(); listIterator.add(&amp;quot;yeyeye&amp;quot;);  Iterator的add只依赖于迭代器的位置, 而remove依赖于迭代器的状态, 不能连续多次调用.</description>
+    </item>
+    
+  </channel>
+</rss>

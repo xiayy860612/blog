@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Amos的Blog</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E4%B9%A6%E5%8D%95/">书单</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/">Language</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/java/">java</a>
+
+            
+            <span class="breadcrumb-item active">Java 类加载</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Java 类加载</h1>
+            </header>
+            <br />
+            <article><p>.class类文件存储了JVM的指令, JVM能够将JVM指令集转换为目标机器的机器语言.</p>
+
+<p>JVM只加载程序执行时所需要的类文件.</p>
+
+<p>类的解析是指加载某个类所以来的所有类的过程.</p>
+
+<p>JVM加载类的大概流程:</p>
+
+<ol>
+<li>根据加载机制来加载类文件, 可以从本地磁盘, web远程等加载, 把获取到的字节码传递给虚拟机</li>
+<li>类的解析</li>
+<li>执行main方法</li>
+<li>执行过程中加载更多的相关的类</li>
+</ol>
+
+<p>类的加载机制会用到多个类加载器, 每个Java程序至少拥有3个类加载器:</p>
+
+<ul>
+<li>Bootstrap引导类加载器, 是JVM不可分割的一部分, 用于加载系统类,
+通常从<strong>jre/lib/rt.jar</strong>中进行加载, 这部分加载的系统类没有对应的ClassLoader.</li>
+<li>Extension扩展类加载器, 从<strong>jre/lib/ext</strong>加载扩展类, 并且不会根据classpath进行加载类</li>
+<li>System系统类加载器(又称应用类加载器), 用于加载开发人员实现的应用类, 从<strong>classpath设置的目录或者是jar文件</strong>里加载类</li>
+</ul>
+
+<pre><code>// String是系统类, 由Bootstrap加载
+String.class.getClassLoader() // null
+
+</code></pre>
+
+<p>Extension类加载器和System类加载器都是URLClassLoader的<strong>实例</strong>.</p>
+
+<p>类加载器有一种父-子关系, 除了Bootstrap类加载器, 每个类加载器都有一个父级的类加载器.
+类加载器在加载一个类的时候, 首先交由父级类加载器来进行加载,
+当父级类加载器没有找到对应的类时, 才由自己进行加载.</p>
+
+<p><img src="/IT杂谈/Language/java/./img/classloader/class_load_order.jpg" alt="类加载顺序" />
+每个线程都有一个对类加载器的引用, 它被称为<strong>上下文类加载器</strong>.
+主线程的上下文类加载器是System类加载器.</p>
+
+<p>新线程创建时的上下文类加载器为创建该线程的上下文类加载器,
+即如果没有显式去设定, 则所有线程都会使用System类加载器</p>
+
+<ul>
+<li>在应用程序代码中, 类是由包和类名来定位</li>
+<li>在JVM中, 类是由<strong>类的全名(包和类名)和类加载器</strong>来确定的.</li>
+</ul>
+
+<p>通过继承ClassLoader来实现自定义的类加载器.</p>
+
+<ul>
+<li>ClassLoader用于加载单个类</li>
+<li>URLClassLoader可以加载类, 也可以加载类目录或者JAR文件</li>
+</ul>
+</article>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+        </div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

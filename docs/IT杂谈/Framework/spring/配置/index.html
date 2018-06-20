@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Amos的Blog</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E4%B9%A6%E5%8D%95/">书单</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Framework/">Framework</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Framework/spring/">spring</a>
+
+            
+            <span class="breadcrumb-item active">Spring Boot --- 配置</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>Spring Boot --- 配置</h1>
+            </header>
+            <br />
+            <article>
+
+<p>常用的配置方式, 优先级从高到低:</p>
+
+<ul>
+<li>命令行参数</li>
+<li>系统环境变量</li>
+<li>指定环境的profile文件, 主要application-{profile}.properties/yml</li>
+<li>通用profile文件, 主要有application.properties/yml文件</li>
+</ul>
+
+<h2 id="profile配置文件">profile配置文件</h2>
+
+<ul>
+<li>application.properties/yml, 通用配置</li>
+<li>application-{profile}.properties/yml</li>
+<li>自定义properties</li>
+</ul>
+
+<p>profile配置文件可以放在以下位置, 优先级从高到低:</p>
+
+<ul>
+<li>resources/config目录</li>
+<li>resources根目录</li>
+</ul>
+
+<p>详情见: <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html#boot-features-external-config-application-property-files">Application Property Files</a></p>
+
+<p>通过<code>spring.profiles.active={profile}</code>来加载指定环境的profile配置文件</p>
+
+<pre><code>
+spring.profiles.active=dev # 加载application-dev.properties
+
+</code></pre>
+
+<h3 id="value">@Value</h3>
+
+<p>使用<code>@Value(&quot;${property_name}&quot;)</code>读取application.properties中的自定义配置</p>
+
+<pre><code>springboot-config.name=hello
+</code></pre>
+
+<pre><code>// ValuableConfigParam
+
+@Component
+public class ValuableConfigParam {
+    @Value(&quot;${springboot-config.name}&quot;)
+    private String name;
+}
+
+</code></pre>
+
+<h3 id="configurationproperties">@ConfigurationProperties</h3>
+
+<p>通过指定前缀来自动解析配置</p>
+
+<pre><code>springboot-config.confprop.id=1
+springboot-config.confprop.name=test
+</code></pre>
+
+<pre><code>// ConfigPropertyParams
+
+@Component
+@ConfigurationProperties(prefix = &quot;springboot-config.confprop&quot;)
+public class ConfigPropertyParams {
+    private Integer id;
+    private String name;
+}
+</code></pre>
+
+<h3 id="propertysource">@PropertySource</h3>
+
+<p>读取自定义的配置</p>
+
+<pre><code>
+custom.id=1
+custom.name=hello
+
+custom.age=18
+</code></pre>
+
+<pre><code>@Configuration
+@PropertySource(&quot;classpath:custom-config.properties&quot;)
+@ConfigurationProperties(prefix = &quot;custom&quot;)
+public class CustomConfig {
+    private Integer id;
+    private String name;
+
+    @Value(&quot;${custom.age}&quot;)
+    private Integer userAge;
+}
+</code></pre>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html">Externalized Configuration</a></li>
+<li><a href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html">Properties and Configuration</a></li>
+</ul>
+</article>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+        </div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
-    <lastBuildDate>Wed, 02 May 2018 11:10:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
     
 	<atom:link href="/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>阿里云 --- 存储</title>
       <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</link>
-      <pubDate>Wed, 02 May 2018 11:10:40 +0000</pubDate>
+      <pubDate>Wed, 02 May 2018 12:52:45 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</guid>
       <description>RAID, 独立磁盘冗余阵列, 多块硬盘通过某种形式形成一定的数据冗余, 这样当一块或多块硬盘损坏时, 数据还能依靠冗余保存下来, 不至于丢失.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>多线程 on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+    <description>Recent content in 多线程 on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>多线程基础</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 13 Jun 2018 08:28:20 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</guid>
+      <description>java.util.concurrent里提供了很多用于并发的组件.
+可以传递给Thread进行异步执行的对象:
+ Runnable, 用于封装没有参数和返回值的异步方法 Callable, 用于封装没有参数, 但有返回值的异步方法 Future, 保存了异步方法执行的状态和结果 FutureTask, 实现了Future和Runnable的接口, 可用来转换Callable到Runnable  Thread的6种状态变化
+一个runnable状态的线程可能正在运行, 也可能没有运行.
+实现UncaughtExceptionHandler接口, 然后可以通过setUncaughtExceptionHandler方法为线程指定异常处理器. 也可以通过Thread.setDefaultUncaughtExceptionHandler为所有线程设置默认的异常处理器.
+同步 如果多个线程同时对某个数据进行请求, 则会产生竞争条件, 此时就需要通过同步的手段来使这些请求串行化处理.
+Java的每个对象都有一个内部锁, 并且该锁有一个内部的条件变量.
+Java的同步策咯:
+ 锁  synchronized方法, synchronized使用的就是对象的内部锁 ReentrantLock condition variable条件变量  同步阻塞, synchronized到对象, 显式加锁, 尽量保证锁的范围尽可能小 监视器 原子操作, java.util.concurrent.atomic提供了很多原子操作的工具 java.util.concurrent提供了线程安全的集合  任何集合类可以通过使用Collections.synchronizedXXX同步包装器方法变成线程安全. 但尽量使用java.util.concurrent提供的线程安全的集合, 而不是使用同步包装器方法.
+List&amp;lt;E&amp;gt; list = Collection.synchronizedList(new ArrayList&amp;lt;E&amp;gt;()); Map&amp;lt;K, V&amp;gt; map = Collection.synchronizedMap(new HashMap&amp;lt;K, V&amp;gt;());  线程池 通过Executor执行器来创建线程池, 返回ExecutorService.
+ newCachedThreadPool, 只在必要时创建新线程; 空闲线程只会保留一定时间后释放 newFixedThreadPool, 固定数量的线程 newScheduledThreadPool, 预定时间执行的固定线程池, 用来替代Timer来处理定时任务  当调用ExecutorService.</description>
+    </item>
+    
+  </channel>
+</rss>

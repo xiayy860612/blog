@@ -7,25 +7,289 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
-    <lastBuildDate>Sun, 27 May 2018 09:09:27 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>知识BBQ-成都-20180527</title>
-      <link>/%E7%9F%A5%E8%AF%86BBQ/CD/20180527/</link>
-      <pubDate>Sun, 27 May 2018 09:09:27 +0000</pubDate>
+      <title>Schema与数据类型优化</title>
+      <link>/IT%E7%B2%BE%E5%8D%8E/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Wed, 20 Jun 2018 09:36:21 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/%E7%9F%A5%E8%AF%86BBQ/CD/20180527/</guid>
-      <description>TypeScript in Angular  源码
-Spring Request Workflow  文档</description>
+      <guid>/IT%E7%B2%BE%E5%8D%8E/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</guid>
+      <description>数据类型的选择 MySQL基础数据类型
+ 数字  整数  tinyint/smallint/mediumint/int/bigint unsigned可选  实数  Float/Double, 浮点计算 DECIMAL, 存储精确的小数, 一般可使用bigint来代替decimal, 通过乘以相应的倍数即可   字符串  char, 定长, 适合更新频繁的列或者长度固定的列 varchar, 变长, 需要额外的1或2个字节来存储长度, 小于等于255则1个字节, 大于则2个字节; 不适合更新频繁的列, 会导致碎片化 text, 很长的字符串  二进制字符串, 比较时以字节为单位进行比较, 效率要比普通字符串要高  binary, 定长 varbinary, 变长 blob, 很长的二进制字符串  时间  datetime, 从1001到9999年, 精度为秒, 把日期和时间封装到格式为YYYYMMDDHHMMSS的整数中, 显示与时区无关, 使用8字节存储 timestamp, 同unit时间戳, 从新纪元时间(1970-01-01T00:00:00)以来的秒数, 使用4字节存储, 只能表示1970到2038年, 显示依赖于时区, 会根据时区不同, 显示对应的时间; 对应的列默认为NOT NULL.   特殊数据类型的处理 uuid数据的处理:
+ 移除uuid中的- 使用unhex函数将uuid字符串转换为16字节的数字, 存储到binary(16)中 使用hex函数将16字节的数字转换为uuid字符串  mysql&amp;gt; select uuid(); +--------------------------------------+ | uuid() | +--------------------------------------+ | e8dc60bb-6df3-11e8-8915-0800273063ab | +--------------------------------------+ 1 row in set mysql&amp;gt; select unhex(&#39;e8dc60bb6df311e889150800273063ab&#39;); +-------------------------------------------+ | unhex(&#39;e8dc60bb6df311e889150800273063ab&#39;) | +-------------------------------------------+ | ��`�m�� +-------------------------------------------+ 1 row in set mysql&amp;gt; select hex(unhex(&#39;e8dc60bb6df311e889150800273063ab&#39;)); +------------------------------------------------+ | hex(unhex(&#39;e8dc60bb6df311e889150800273063ab&#39;)) | +------------------------------------------------+ | E8DC60BB6DF311E889150800273063AB | +------------------------------------------------+ 1 row in set  ip数据需要转换为数字存储:</description>
+    </item>
+    
+    <item>
+      <title>Java 常用特性</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java%E5%B8%B8%E7%94%A8%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 20 Jun 2018 07:31:33 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Java%E5%B8%B8%E7%94%A8%E7%89%B9%E6%80%A7/</guid>
+      <description>  Annotation 代理 IO NIO 多线程 集合 反射 异常处理机制 网络  Reference  JSR 133 内存模型和线程规范, 中文版   </description>
+    </item>
+    
+    <item>
+      <title>Java 书单</title>
+      <link>/%E4%B9%A6%E5%8D%95/Java/</link>
+      <pubDate>Wed, 20 Jun 2018 07:18:27 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/%E4%B9%A6%E5%8D%95/Java/</guid>
+      <description> 初级 熟练掌握Java语法和基本特性, 并熟练使用Java以及相关的工具进行业务开发
+ Java核心技术 卷I, 掌握Java基础以及基本特性 SQL必知必会, 快速掌握sql  中级 掌握Java的常用特性, 能够深入理解各种特性和相关工具的实现, 并对JVM有所了解
+ Java并发编程实战, 深入理解Java的并发处理 高性能MySQL, 深入理解如何优化MySQL  高级 能够优化Java代码, 并能能够对JVM进行调优
+Reference  Java核心必读书籍共享  </description>
+    </item>
+    
+    <item>
+      <title>创建LVM分区</title>
+      <link>/IT%E6%9D%82%E8%B0%88/OS/linux/%E5%88%9B%E5%BB%BAlvm%E5%88%86%E5%8C%BA/</link>
+      <pubDate>Wed, 20 Jun 2018 07:02:10 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/OS/linux/%E5%88%9B%E5%BB%BAlvm%E5%88%86%E5%8C%BA/</guid>
+      <description>所有的操作尽量使用root来操作
+从物理硬盘创建新分区, 格式化为LVM
+$ fdisk /dev/sda Command: p Commond: n Command: t $ partprobe  使用新创建的分区来创建物理卷PV(Physical Volume)
+$ pvscan $ pvcreate /dev/sda2 $ pvdisplay  建立卷组VG(Volume Group), 并关联到创建的PV上
+$ vgcreate home-vg /dev/sda2  使用新建立的VG来建立逻辑卷LV(Logical Volume)
+$ lvcreate -L 100G -n home-lv home-vg  格式化LV并挂在到系统中
+$ mke2fs -t ext4 /dev/home-vg/home-lv $ mount -t ext4 /mnt/home /dev/home-vg/home-lv  启动时自动挂载在/etc/fstab文件进行设置, 加入下面的命令即可
+/dev/mapper/home--vg-home--lv /home ext4 defaults 0 2  </description>
+    </item>
+    
+    <item>
+      <title>BST二叉查找树</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/BST%E6%A0%91/</link>
+      <pubDate>Fri, 15 Jun 2018 12:54:58 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/BST%E6%A0%91/</guid>
+      <description>二叉查找树中每个结点X, 它的左子树中所有结点的值小于X结点中的值, 它的右子树中的所有结点的值大于X结点中的值. 即树中所有的元素以某种一致的方式排序.
+二叉查找树的平均深度为O(logN), N为结点数.
+二叉树的常用操作:
+ 查询, O(logN)  查询指定值的结点 查询最大/最小结点    </description>
+    </item>
+    
+    <item>
+      <title>参考资源</title>
+      <link>/IT%E6%9D%82%E8%B0%88/reference/</link>
+      <pubDate>Thu, 14 Jun 2018 07:44:15 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/reference/</guid>
+      <description> 开源社区  Stack Overflow OpenGenus  关注  Jerry Qu专注 WEB 端开发 阮一峰  </description>
+    </item>
+    
+    <item>
+      <title>多线程基础</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Wed, 13 Jun 2018 08:28:20 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/common/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80/</guid>
+      <description>java.util.concurrent里提供了很多用于并发的组件.
+可以传递给Thread进行异步执行的对象:
+ Runnable, 用于封装没有参数和返回值的异步方法 Callable, 用于封装没有参数, 但有返回值的异步方法 Future, 保存了异步方法执行的状态和结果 FutureTask, 实现了Future和Runnable的接口, 可用来转换Callable到Runnable  Thread的6种状态变化
+一个runnable状态的线程可能正在运行, 也可能没有运行.
+实现UncaughtExceptionHandler接口, 然后可以通过setUncaughtExceptionHandler方法为线程指定异常处理器. 也可以通过Thread.setDefaultUncaughtExceptionHandler为所有线程设置默认的异常处理器.
+同步 如果多个线程同时对某个数据进行请求, 则会产生竞争条件, 此时就需要通过同步的手段来使这些请求串行化处理.
+Java的每个对象都有一个内部锁, 并且该锁有一个内部的条件变量.
+Java的同步策咯:
+ 锁  synchronized方法, synchronized使用的就是对象的内部锁 ReentrantLock condition variable条件变量  同步阻塞, synchronized到对象, 显式加锁, 尽量保证锁的范围尽可能小 监视器 原子操作, java.util.concurrent.atomic提供了很多原子操作的工具 java.util.concurrent提供了线程安全的集合  任何集合类可以通过使用Collections.synchronizedXXX同步包装器方法变成线程安全. 但尽量使用java.util.concurrent提供的线程安全的集合, 而不是使用同步包装器方法.
+List&amp;lt;E&amp;gt; list = Collection.synchronizedList(new ArrayList&amp;lt;E&amp;gt;()); Map&amp;lt;K, V&amp;gt; map = Collection.synchronizedMap(new HashMap&amp;lt;K, V&amp;gt;());  线程池 通过Executor执行器来创建线程池, 返回ExecutorService.
+ newCachedThreadPool, 只在必要时创建新线程; 空闲线程只会保留一定时间后释放 newFixedThreadPool, 固定数量的线程 newScheduledThreadPool, 预定时间执行的固定线程池, 用来替代Timer来处理定时任务  当调用ExecutorService.</description>
+    </item>
+    
+    <item>
+      <title>平衡二叉树 AVL树</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/AVL%E6%A0%91/</link>
+      <pubDate>Sat, 09 Jun 2018 08:57:11 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/AVL%E6%A0%91/</guid>
+      <description> AVL树时带有平衡条件的二叉查找树. 这个平衡条件是每个结点的左子树和右子数的高度最多差1的二叉查找树(假设空树的高度为-1).
+高度为h的AVL树中, 最少结点数S(h) = S(h-1) + S(h-2) + 1, 即最少结点左子树+最少结点右子树+根节点.
+除了插入/删除操作, 绝大部分操作都可以以时间O(logN)来执行
+插入/删除操作有可能会破坏树的平衡, 需要通过旋转来重新平衡
+旋转针对的时被破坏了平衡部分的树, 通过旋转将破坏平衡的子树提升1层来重新达到平衡
+树出现不平衡的情况:
+ 对左子树的左子树进行插入, 单旋转 对左子树的右子树进行插入, 双旋转 对右子树的左子树进行插入, 双旋转 对右子树的右子树进行插入, 单旋转  AVL树的高度 = max(左子树的高度, 右子树的高度) + 1
+删除  立即删除结点 懒惰删除  </description>
+    </item>
+    
+    <item>
+      <title>Java 探索 --- Collection</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/collection/collection/</link>
+      <pubDate>Fri, 08 Jun 2018 03:32:49 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/collection/collection/</guid>
+      <description>Java中集合类的基本接口为Collection接口.
+ List, 表示有序集合  ArrayList, 支持随机访问 LinkedList, 便于中间插入删除  Set  HashSet, 表示不重复无序集合, 可以快速查找元素, 通过自定义元素的hashCode和equals来去重 TreeSet, 有序集合, 通过自定义元素的Comparator接口来去重  Queue/Dequeue, 在队列头尾进行操作 Map, 存储键值对  HashMap TreeMap   Vector和ArrayList都是使用动态数组来实现, 但Vector是线程安全, 而ArrayList不是; 效率上ArrayList要优于Vector.
+Hashtable和HashMap拥有相同的接口, Hashtable是线程安全, HashMap不是. 如果有并发访问的需求, 使用ConcurrentHashMap.
+Collection通过使用Iterator迭代器来顺序访问集合中的元素, 元素被访问的顺序取决于集合类型.
+ Collection&amp;lt;String&amp;gt; collection = new ArrayList&amp;lt;&amp;gt;(); collection.add(&amp;quot;hello&amp;quot;); collection.add(&amp;quot;world&amp;quot;); Iterator&amp;lt;String&amp;gt; it = collection.iterator(); while (it.hasNext()) { String next = it.next(); System.out.println(next); }  在Collection中间位置添加元素需要通过Iterator来进行插入.
+ListIterator&amp;lt;String&amp;gt; listIterator = collection.listIterator(); listIterator.next(); listIterator.add(&amp;quot;yeyeye&amp;quot;);  Iterator的add只依赖于迭代器的位置, 而remove依赖于迭代器的状态, 不能连续多次调用.</description>
+    </item>
+    
+    <item>
+      <title>Java 类加载</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E7%B1%BB%E5%8A%A0%E8%BD%BD/</link>
+      <pubDate>Fri, 08 Jun 2018 03:02:29 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/%E7%B1%BB%E5%8A%A0%E8%BD%BD/</guid>
+      <description>.class类文件存储了JVM的指令, JVM能够将JVM指令集转换为目标机器的机器语言.
+JVM只加载程序执行时所需要的类文件.
+类的解析是指加载某个类所以来的所有类的过程.
+JVM加载类的大概流程:
+ 根据加载机制来加载类文件, 可以从本地磁盘, web远程等加载, 把获取到的字节码传递给虚拟机 类的解析 执行main方法 执行过程中加载更多的相关的类  类的加载机制会用到多个类加载器, 每个Java程序至少拥有3个类加载器:
+ Bootstrap引导类加载器, 是JVM不可分割的一部分, 用于加载系统类, 通常从jre/lib/rt.jar中进行加载, 这部分加载的系统类没有对应的ClassLoader. Extension扩展类加载器, 从jre/lib/ext加载扩展类, 并且不会根据classpath进行加载类 System系统类加载器(又称应用类加载器), 用于加载开发人员实现的应用类, 从classpath设置的目录或者是jar文件里加载类  // String是系统类, 由Bootstrap加载 String.class.getClassLoader() // null  Extension类加载器和System类加载器都是URLClassLoader的实例.
+类加载器有一种父-子关系, 除了Bootstrap类加载器, 每个类加载器都有一个父级的类加载器. 类加载器在加载一个类的时候, 首先交由父级类加载器来进行加载, 当父级类加载器没有找到对应的类时, 才由自己进行加载.
+每个线程都有一个对类加载器的引用, 它被称为上下文类加载器. 主线程的上下文类加载器是System类加载器.
+新线程创建时的上下文类加载器为创建该线程的上下文类加载器, 即如果没有显式去设定, 则所有线程都会使用System类加载器
+ 在应用程序代码中, 类是由包和类名来定位 在JVM中, 类是由类的全名(包和类名)和类加载器来确定的.  通过继承ClassLoader来实现自定义的类加载器.
+ ClassLoader用于加载单个类 URLClassLoader可以加载类, 也可以加载类目录或者JAR文件  </description>
+    </item>
+    
+    <item>
+      <title>树 &amp;&amp; 二叉树</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/Tree/</link>
+      <pubDate>Thu, 07 Jun 2018 11:06:50 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/Tree/</guid>
+      <description> 树的组成:
+ 节点(node)  根节点(root) 子节点(child) 叶节点(leaf)  边(edge)  树的路径是指一个节点到另一个节点之间的节点序列, 路径的长即为两个节点间的边的条数
+节点的深度是指从根节点到指定节点的唯一路径的长.
+节点的高是指从指定节点到树叶的最长路径的长.
+树的应用:
+ 分层文件系统  树的遍历:
+ 前序遍历(pre-order), 先处理当前节点, 然后处理子节点, 最后兄弟节点 后序遍历(post-order), 先处理子节点, 然后当前节点, 最后兄弟节点  二叉树  每个节点最多2个子节点 二叉树的平均深度要比节点个数小的多, 为O(N的平方根)  二叉树查找树的运行时间为O(logN)
+应用:
+ 编译器 表达式二叉树  二叉树的遍历:
+ 中序遍历(inorder), left, current, right 后序遍历(post-order), left, right, current 前序遍历(pre-order), current, left, right  </description>
+    </item>
+    
+    <item>
+      <title>Spring 整体架构</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/spring/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Thu, 07 Jun 2018 10:50:02 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/spring/%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/</guid>
+      <description>核心7大模块:
+ Spring Core, 实现了IOC Spring Context Spring AOP Spring DAO Spring ORM, 集成了JPA, MyBatis等 Spring Web Spring Web MVC  </description>
+    </item>
+    
+    <item>
+      <title>Java 8 新特性</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java8/%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 06 Jun 2018 13:25:44 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Java8/%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description> Reference  Java 8 特性 – 终极手册 Java 8 新特性概述  </description>
+    </item>
+    
+    <item>
+      <title>Java 9 新特</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java9/%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 06 Jun 2018 13:25:39 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Java9/%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description> Reference </description>
+    </item>
+    
+    <item>
+      <title>Java 10 新特性</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Java10/%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 06 Jun 2018 13:25:35 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Java10/%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description> Reference  Java 8 特性 – 终极手册 Java 8 新特性概述  </description>
+    </item>
+    
+    <item>
+      <title>Spring Boot --- 配置</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Framework/spring/%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 06 Jun 2018 13:14:41 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Framework/spring/%E9%85%8D%E7%BD%AE/</guid>
+      <description>常用的配置方式, 优先级从高到低:
+ 命令行参数 系统环境变量 指定环境的profile文件, 主要application-{profile}.properties/yml 通用profile文件, 主要有application.properties/yml文件  profile配置文件  application.properties/yml, 通用配置 application-{profile}.properties/yml 自定义properties  profile配置文件可以放在以下位置, 优先级从高到低:
+ resources/config目录 resources根目录  详情见: Application Property Files
+通过spring.profiles.active={profile}来加载指定环境的profile配置文件
+ spring.profiles.active=dev # 加载application-dev.properties  @Value 使用@Value(&amp;quot;${property_name}&amp;quot;)读取application.properties中的自定义配置
+springboot-config.name=hello  // ValuableConfigParam @Component public class ValuableConfigParam { @Value(&amp;quot;${springboot-config.name}&amp;quot;) private String name; }  @ConfigurationProperties 通过指定前缀来自动解析配置
+springboot-config.confprop.id=1 springboot-config.confprop.name=test  // ConfigPropertyParams @Component @ConfigurationProperties(prefix = &amp;quot;springboot-config.confprop&amp;quot;) public class ConfigPropertyParams { private Integer id; private String name; }  @PropertySource 读取自定义的配置</description>
+    </item>
+    
+    <item>
+      <title>时间的探索之旅 --- Java篇</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time01/</link>
+      <pubDate>Wed, 06 Jun 2018 13:13:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time01/</guid>
+      <description>不同的时间 时区 时间的表示方式  不同的时间  GMT UTC CST  GMT(Greenwich Mean Time), 格林尼治时间, 是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.
+UTC(Coordinated Universal Time), 协调世界时
+GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确, UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标, 以及以秒为单位的国际原子时所综合精算而成的时间.
+UTC比GMT来得更加精准, 一般都使用UTC时间, 而且在使用时, 两者一般被认为是相同的表示方式.
+CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间
+时区 人们规定以子午线为中心，向东西两侧延伸，每 15 度划分一个时区，刚好是 24 个时区。 然后因为一天有 24 小时，地球自转一圈是 360 度，360 度 / 24 小时 = 15 度/小时， 所以每差一个时区，时间就差一个小时。
+新纪元时间(epoch)的起点为穿过格林威治天文台的本初子午线所处时区(0时区)的1970.1.1 00:00:00.
+人类时间:
+ 本地时间, 基于本地时区的时间, 包括本地的日期和时间 时区时间, 包括日期, 时间以及时区  时间的表示方式  时间戳, 从新纪元时间(epoch)到现在的时间差, 一般用毫秒ms来度量 ISO 8601, 格式YYYY-MM-DDTHH:mm:ss.</description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/String/</link>
+      <pubDate>Wed, 06 Jun 2018 13:12:28 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/String/</guid>
+      <description>字符串由char序列组成, char是采用的UTF-16编码的Unicode码.
+String类对象是不可变对象, 对String对象的任何改变都不影响到原对象， 相关的任何change操作都会生成新的对象.
+字符串比较:
+ ==, 用来比较两个字符串的存储位置是否相同, 即检查是否同一个对象 equals, 用来比较两个字符串的值是否相等  字符串字面量存储在jvm虚拟机的常量池里, 能够快速读取, 只读.
+// &amp;quot;hello&amp;quot;为字符串字面量, 存储在jvm的常量池里 String s0 = &amp;quot;hello&amp;quot;;  字符串的构建StringBuffer, StringBuilder String字符串可以通过+, contact来进行拼接生成一个新的String对象
+ contact只能拼接字符串 使用+进行字符串拼接时, 不管后者是不是字符串, 总是会被转换为字符串, 但效率低, 会被编译器转换为StringBuilder来进行拼接  String s0 = &amp;quot;hello&amp;quot;; String s1 = s0 + 123; 反编译: 0: ldc #2	// String hello 2: astore_1 3: new #8	// class java/lang/StringBuilder 6: dup 7: invokespecial #9	// Method java/lang/StringBuilder.&amp;quot;&amp;lt;init&amp;gt;&amp;quot;:()V 10: aload_1 11: invokevirtual #10	// Method java/lang/StringBuilder.</description>
+    </item>
+    
+    <item>
+      <title>Java --- 时间探索</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time02/</link>
+      <pubDate>Wed, 06 Jun 2018 06:57:51 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time02/</guid>
+      <description>Java 8 引入了新的时间模块java.time, 以穿过英国格林尼治天文台的本初子午线所处时区(UTC+0时区)的 1970.1.1 00:00::00作为新纪元的时间原点, 通常称为epoch时间.
+而Java的Instant表示以epoch为原点的时间线上的某个时间点, 是一个绝对时间.
+见源码: public static Instant now() { return Clock.systemUTC().instant(); }  使用Duration来计算两个Instant之间的时间差.
+Java有三种种时间
+ 绝对时间, 以epoch为原点的时间间隔, 通常用ms来描述  System.currentTimeMillis Instant  本地时间, 不包含时区信息, 只是纯粹的时间信息 时区时间, 包含时间信息和时区信息, 时区信息来源于IANA数据库  本地时间+时区 =&amp;gt; 时区时间 &amp;lt;=&amp;gt; Instant时间
+// 本地时间 LocalDateTime date = LocalDateTime.of(year, month, day, hour, 0); System.out.println(date); // 本地时间不包含将时区信息, 可设置为任意时区, 但时间信息不会发生变化 ZonedDateTime zdt = date.atZone(ZoneId.of(&amp;quot;UTC+9&amp;quot;)); System.out.println(zdt); assertEquals(hour, zdt.getHour()); zdt = date.atZone(ZoneId.of(&amp;quot;UTC+7&amp;quot;)); System.out.println(zdt); assertEquals(hour, zdt.getHour());  时间的格式化 两种比较常用的时间标准</description>
+    </item>
+    
+    <item>
+      <title>阿里云---弹性伸缩</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/%E5%BC%B9%E6%80%A7%E4%BC%B8%E7%BC%A9/</link>
+      <pubDate>Mon, 04 Jun 2018 10:34:39 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/%E5%BC%B9%E6%80%A7%E4%BC%B8%E7%BC%A9/</guid>
+      <description>弹性伸缩的资源:
+ 服务器 网络 存储  弹性伸缩的扩展方式:
+ 垂直扩展, 提升硬件配置 水平扩展, 增加单机的数量  弹性伸缩的优势:
+ 自动化 节约成本 容错性  阿里云的弹性伸缩可对ECS进行弹性伸缩:
+ 伸缩组 伸缩配置, 伸缩时的ECS实例的配置, 配置后不可修改 伸缩规则, 定义了具体的扩展或收缩的操作  </description>
+    </item>
+    
+    <item>
+      <title>Swagger 快速入门</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</link>
+      <pubDate>Sat, 19 May 2018 16:27:06 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</guid>
+      <description>Annotations</description>
     </item>
     
     <item>
       <title>swagger离线文档</title>
       <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Sat, 19 May 2018 16:22:55 +0000</pubDate>
+      <pubDate>Sat, 19 May 2018 16:24:14 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
       <description> 目前只可兼容springfox-swagger:2.6.1
@@ -35,7 +299,7 @@ Reference  SpringBoot项目生成RESTfull API的文档  </description>
     <item>
       <title>背包问题</title>
       <link>/IT%E6%9D%82%E8%B0%88/Algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</link>
-      <pubDate>Wed, 16 May 2018 12:53:23 +0000</pubDate>
+      <pubDate>Wed, 16 May 2018 12:54:34 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/package/</guid>
       <description> Reference  动态规划之01背包问题（最易理解的讲解）  </description>
@@ -51,20 +315,9 @@ Reference  SpringBoot项目生成RESTfull API的文档  </description>
     </item>
     
     <item>
-      <title>阿里云负载均衡SLB</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</link>
-      <pubDate>Thu, 10 May 2018 14:28:45 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</guid>
-      <description>- SLB实例 - 监听规则 - 后端服务器
-SLB提供的功能:
- 支持公网和私网的负载均衡 4层和7层的负载均衡服务 调度方式  轮询模式, 依次转发给后端服务器 最小连接数模式, 转发给最小连接数的后端服务器 加权轮询, 根据后端权重来转发  会话保持 健康检查 单个实例同城灾备, 已经部署在同地域的不同可用区  </description>
-    </item>
-    
-    <item>
       <title>Spring --- 请求处理流程</title>
       <link>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</link>
-      <pubDate>Wed, 09 May 2018 13:37:22 +0000</pubDate>
+      <pubDate>Mon, 14 May 2018 02:17:09 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E7%B2%BE%E5%8D%8E/Framework/spring/request-workflow/request-workflow/</guid>
       <description>Filter DispatcherServlet Interceptor HandlerAdapter  web程序启动时的初始化顺序: ServletContext -&amp;gt; listener -&amp;gt; filter -&amp;gt; servlet
@@ -73,9 +326,20 @@ Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提�
     </item>
     
     <item>
+      <title>阿里云负载均衡SLB</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</link>
+      <pubDate>Thu, 10 May 2018 15:01:30 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/SLB/SLB/</guid>
+      <description>- SLB实例 - 监听规则 - 后端服务器
+SLB提供的功能:
+ 支持公网和私网的负载均衡 4层和7层的负载均衡服务 调度方式  轮询模式, 依次转发给后端服务器 最小连接数模式, 转发给最小连接数的后端服务器 加权轮询, 根据后端权重来转发  会话保持 健康检查 单个实例同城灾备, 已经部署在同地域的不同可用区  </description>
+    </item>
+    
+    <item>
       <title>WireMock</title>
       <link>/IT%E6%9D%82%E8%B0%88/QA/Wiremock/</link>
-      <pubDate>Sun, 06 May 2018 05:20:54 +0000</pubDate>
+      <pubDate>Sun, 06 May 2018 08:50:49 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/QA/Wiremock/</guid>
       <description>服务的mock 录制/回放依赖服务的request/response 在集成测试时, 对第三方服务进行mock 支持state behavior进行串行行为测试  将录制和回放的数据分开
@@ -85,7 +349,7 @@ Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提�
     <item>
       <title>Java实用工具</title>
       <link>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</link>
-      <pubDate>Thu, 03 May 2018 08:03:11 +0000</pubDate>
+      <pubDate>Thu, 03 May 2018 08:04:53 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Language/java/good_tools/</guid>
       <description> idea  lombok, 编译时自动生成attribute的get/set方法  </description>
@@ -94,7 +358,7 @@ Filter  Servlet规范规定的，只能用于Web程序中, 由Servlet容器提�
     <item>
       <title>阿里云 --- 存储</title>
       <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</link>
-      <pubDate>Wed, 02 May 2018 11:10:40 +0000</pubDate>
+      <pubDate>Wed, 02 May 2018 12:52:45 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/OSS/OSS/</guid>
       <description>RAID, 独立磁盘冗余阵列, 多块硬盘通过某种形式形成一定的数据冗余, 这样当一块或多块硬盘损坏时, 数据还能依靠冗余保存下来, 不至于丢失.
@@ -110,7 +374,7 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
     <item>
       <title>Shiro --- 认证</title>
       <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authentication/</link>
-      <pubDate>Wed, 02 May 2018 06:03:49 +0000</pubDate>
+      <pubDate>Wed, 02 May 2018 06:04:17 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authentication/</guid>
       <description></description>
@@ -119,16 +383,27 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
     <item>
       <title>Shiro --- 鉴权</title>
       <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authorization/</link>
-      <pubDate>Wed, 02 May 2018 06:03:35 +0000</pubDate>
+      <pubDate>Wed, 02 May 2018 06:03:45 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/authorization/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Shiro</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</link>
+      <pubDate>Wed, 02 May 2018 02:49:41 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</guid>
+      <description> 大概的处理流程:
+ Shiro Filter 获取token 使用token来进行Subject.login 通过Realm.supports来找到对应的Realm 将token传递给Realm.doGetAuthenticationInfo, 进行认证, 获取认证后的信息 将获取到的认证后的信息传递给Realm.doGetAuthorizationInfo, 进行鉴权, 获取角色和权限信息  Shiro的拦截器Filter 配置在ShiroFilterFactoryBean中
+Reference  跟我学Shiro  </description>
+    </item>
+    
+    <item>
       <title>阿里云 --- RDS</title>
       <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</link>
-      <pubDate>Tue, 01 May 2018 11:27:32 +0000</pubDate>
+      <pubDate>Tue, 01 May 2018 12:35:50 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/RDS/RDS/</guid>
       <description>MySQL的相关架构
@@ -139,16 +414,6 @@ Object都存储在Bucket中, Bucket在整个OSS中全局唯一且不可修改.
 使用DTS来对数据进行迁移:
  结构迁移 全量数据迁移 增量数据迁移  RDS数据同步方式:
  半同步, 主库数据修改后, 会在保证数据同步到一定数量的备库后, 返回响应, 增加响应时间. 异步, 主库数据修改后, 立即返回响应, 不关心数据是否已经同步到备库. 如果主库宕机, 备库无法保证数据一致性.  </description>
-    </item>
-    
-    <item>
-      <title>知识BBQ-成都-20180429</title>
-      <link>/%E7%9F%A5%E8%AF%86BBQ/CD/20180429/</link>
-      <pubDate>Mon, 30 Apr 2018 13:36:19 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/%E7%9F%A5%E8%AF%86BBQ/CD/20180429/</guid>
-      <description> 本次活动的主题为互联网分布式系统应用架构的概览, 主要从2个层面的扩展来看, 网络层和应用层
-网络层  BGP多线技术 CDN DNS  应用层  负载均衡  弹性收缩 独立交付  应用层缓存 同步转异步  线程池模式 消息架构  数据库读写分离  Reference  活动视频下载, 密码: fzi3  </description>
     </item>
     
     <item>
@@ -593,17 +858,6 @@ Each kind of peer should inherit from PeerBase. There are some different kind of
     </item>
     
     <item>
-      <title>Shiro</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/shiro/shiro/</guid>
-      <description> 大概的处理流程:
- Shiro Filter 获取token 使用token来进行Subject.login 通过Realm.supports来找到对应的Realm 将token传递给Realm.doGetAuthenticationInfo, 进行认证, 获取认证后的信息 将获取到的认证后的信息传递给Realm.doGetAuthorizationInfo, 进行鉴权, 获取角色和权限信息  Shiro的拦截器Filter 配置在ShiroFilterFactoryBean中
-Reference  跟我学Shiro  </description>
-    </item>
-    
-    <item>
       <title>Stream</title>
       <link>/IT%E6%9D%82%E8%B0%88/Language/csharp/stream/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
@@ -623,15 +877,6 @@ Reference  跟我学Shiro  </description>
       <guid>/IT%E6%9D%82%E8%B0%88/Tools/Editor/sublime-text3-config/</guid>
       <description>&lt;p&gt;Sublime Text3 环境配置
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Swagger 快速入门</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</guid>
-      <description>Annotations</description>
     </item>
     
     <item>
@@ -674,15 +919,6 @@ Reference  跟我学Shiro  </description>
     </item>
     
     <item>
-      <title>参考资源</title>
-      <link>/IT%E6%9D%82%E8%B0%88/reference/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/reference/</guid>
-      <description> 开源社区  Stack Overflow OpenGenus  </description>
-    </item>
-    
-    <item>
       <title>好文推荐</title>
       <link>/IT%E6%9D%82%E8%B0%88/good-article/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
@@ -701,57 +937,12 @@ Reference  跟我学Shiro  </description>
     </item>
     
     <item>
-      <title>时间的探索之旅 --- Java篇</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/Time/</guid>
-      <description>不同的时间 时区 时间的表示方式  不同的时间  GMT UTC CST  GMT(Greenwich Mean Time), 格林尼治时间, 是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.
-UTC(Coordinated Universal Time), 协调世界时
-GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确, UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标, 以及以秒为单位的国际原子时所综合精算而成的时间.
-UTC比GMT来得更加精准, 一般都使用UTC时间, 而且在使用时, 两者一般被认为是相同的表示方式.
-CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间
-时区 人们规定以子午线为中心，向东西两侧延伸，每 15 度划分一个时区，刚好是 24 个时区。 然后因为一天有 24 小时，地球自转一圈是 360 度，360 度 / 24 小时 = 15 度/小时， 所以每差一个时区，时间就差一个小时。
-新纪元时间(epoch)的起点为穿过格林威治天文台的本初子午线所处时区(0时区)的1970.1.1 00:00:00.
-人类时间:
- 本地时间, 基于本地时区的时间, 包括本地的日期和时间 时区时间, 包括日期, 时间以及时区  时间的表示方式  时间戳, 从新纪元时间(epoch)到现在的时间差, 一般用毫秒ms来度量 ISO 8601, 格式YYYY-MM-DDTHH:mm:ss.</description>
-    </item>
-    
-    <item>
-      <title>树 &amp;&amp; 二叉树</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Algorithm/Tree/</guid>
-      <description> 树的组成:
- 节点(node)  根节点(root) 子节点(child) 叶节点(leaf)  边(edge)  树的路径是指一个节点到另一个节点之间的节点序列, 路径的长即为两个节点间的边的条数
-节点的深度是指从根节点到指定节点的唯一路径的长.
-节点的高是指从指定节点到树叶的最长路径的长.
-树的应用:
- 分层文件系统  树的遍历:
- 前序遍历(pre-order), 先处理当前节点, 然后处理子节点, 最后兄弟节点 后序遍历(post-order), 先处理子节点, 然后当前节点, 最后兄弟节点  二叉树  每个节点最多2个子节点 二叉树的平均深度要比节点个数小的多, 为O(N的平方根)  二叉树查找树的运行时间为O(logN)
-应用:
- 编译器 表达式二叉树  二叉树的遍历:
- 中序遍历(inorder), left, current, right 后序遍历(post-order), left, right, current 前序遍历(pre-order), current, left, right  </description>
-    </item>
-    
-    <item>
       <title>认证方式 --- OAuth</title>
       <link>/IT%E6%9D%82%E8%B0%88/Web/auth/oauth/</link>
       <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Web/auth/oauth/</guid>
       <description> Reference  理解OAuth 2.0 关于 RESTFUL API 安全认证方式的一些总结  </description>
-    </item>
-    
-    <item>
-      <title>阿里云 OSS &amp;&amp; CDN</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/CDN/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Cloud/aliyun/CDN/</guid>
-      <description> 使用OSS作为源站, OSS用于存储上传数据; CDN提供CDN节点, 缓存OSS源站的内容.
-OSS  可使用ACL对存储桶进行基本读写权限设置 可使用RAM子账号提供对资源访问控制 通过 Delimiter 和 Prefix 参数的配合模拟出文件夹功能  CDN  可设置RAM子用户对CDN资源的访问权限进行管理   </description>
     </item>
     
   </channel>

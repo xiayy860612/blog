@@ -7,28 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
     <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
-    <lastBuildDate>Sat, 19 May 2018 16:22:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
     
 	<atom:link href="/IT%E6%9D%82%E8%B0%88/Tools/swagger/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Swagger 快速入门</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</link>
+      <pubDate>Sat, 19 May 2018 16:27:06 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</guid>
+      <description>Annotations</description>
+    </item>
+    
+    <item>
       <title>swagger离线文档</title>
       <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</link>
-      <pubDate>Sat, 19 May 2018 16:22:55 +0000</pubDate>
+      <pubDate>Sat, 19 May 2018 16:24:14 +0000</pubDate>
       <author>xiayy860612@126.com (Amos Xia)</author>
       <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger%E7%A6%BB%E7%BA%BF%E6%96%87%E6%A1%A3/</guid>
       <description> 目前只可兼容springfox-swagger:2.6.1
 Reference  SpringBoot项目生成RESTfull API的文档  </description>
-    </item>
-    
-    <item>
-      <title>Swagger 快速入门</title>
-      <link>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</link>
-      <pubDate>Mon, 30 Apr 2018 13:28:12 +0000</pubDate>
-      <author>xiayy860612@126.com (Amos Xia)</author>
-      <guid>/IT%E6%9D%82%E8%B0%88/Tools/swagger/swagger-basic/</guid>
-      <description>Annotations</description>
     </item>
     
   </channel>

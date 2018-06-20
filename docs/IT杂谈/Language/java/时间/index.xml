@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>时间 on Amos的Blog</title>
+    <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/</link>
+    <description>Recent content in 时间 on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
+    
+	<atom:link href="/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>时间的探索之旅 --- Java篇</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time01/</link>
+      <pubDate>Wed, 06 Jun 2018 13:13:12 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time01/</guid>
+      <description>不同的时间 时区 时间的表示方式  不同的时间  GMT UTC CST  GMT(Greenwich Mean Time), 格林尼治时间, 是英国伦敦的皇家格林威治天文台的标准时间, 因为它刚好在本初子午线经过的地方.
+UTC(Coordinated Universal Time), 协调世界时
+GMT是根据地球自转, 公转计算的(太阳每天经过英国伦敦皇家格林威治天文台的时间为中午12 点)，不是非常准确, UTC是经过平均太阳时(以格林威治时间GMT为准), 地轴运动修正后的新时标, 以及以秒为单位的国际原子时所综合精算而成的时间.
+UTC比GMT来得更加精准, 一般都使用UTC时间, 而且在使用时, 两者一般被认为是相同的表示方式.
+CST(China Standard Time), 中国标准时间, 即UTC+8, 东八区时间
+时区 人们规定以子午线为中心，向东西两侧延伸，每 15 度划分一个时区，刚好是 24 个时区。 然后因为一天有 24 小时，地球自转一圈是 360 度，360 度 / 24 小时 = 15 度/小时， 所以每差一个时区，时间就差一个小时。
+新纪元时间(epoch)的起点为穿过格林威治天文台的本初子午线所处时区(0时区)的1970.1.1 00:00:00.
+人类时间:
+ 本地时间, 基于本地时区的时间, 包括本地的日期和时间 时区时间, 包括日期, 时间以及时区  时间的表示方式  时间戳, 从新纪元时间(epoch)到现在的时间差, 一般用毫秒ms来度量 ISO 8601, 格式YYYY-MM-DDTHH:mm:ss.</description>
+    </item>
+    
+    <item>
+      <title>Java --- 时间探索</title>
+      <link>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time02/</link>
+      <pubDate>Wed, 06 Jun 2018 06:57:51 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/IT%E6%9D%82%E8%B0%88/Language/java/%E6%97%B6%E9%97%B4/Time02/</guid>
+      <description>Java 8 引入了新的时间模块java.time, 以穿过英国格林尼治天文台的本初子午线所处时区(UTC+0时区)的 1970.1.1 00:00::00作为新纪元的时间原点, 通常称为epoch时间.
+而Java的Instant表示以epoch为原点的时间线上的某个时间点, 是一个绝对时间.
+见源码: public static Instant now() { return Clock.systemUTC().instant(); }  使用Duration来计算两个Instant之间的时间差.
+Java有三种种时间
+ 绝对时间, 以epoch为原点的时间间隔, 通常用ms来描述  System.currentTimeMillis Instant  本地时间, 不包含时区信息, 只是纯粹的时间信息 时区时间, 包含时间信息和时区信息, 时区信息来源于IANA数据库  本地时间+时区 =&amp;gt; 时区时间 &amp;lt;=&amp;gt; Instant时间
+// 本地时间 LocalDateTime date = LocalDateTime.of(year, month, day, hour, 0); System.out.println(date); // 本地时间不包含将时区信息, 可设置为任意时区, 但时间信息不会发生变化 ZonedDateTime zdt = date.atZone(ZoneId.of(&amp;quot;UTC+9&amp;quot;)); System.out.println(zdt); assertEquals(hour, zdt.getHour()); zdt = date.atZone(ZoneId.of(&amp;quot;UTC+7&amp;quot;)); System.out.println(zdt); assertEquals(hour, zdt.getHour());  时间的格式化 两种比较常用的时间标准</description>
+    </item>
+    
+  </channel>
+</rss>

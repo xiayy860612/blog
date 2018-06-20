@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Amos的Blog</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Amos的Blog</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IT%E7%B2%BE%E5%8D%8E/">IT精华</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E4%B9%A6%E5%8D%95/">书单</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/8820862?s=400&amp;u=939cf0dd47efe62a7308645a3753c3539b1595bd&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Amos Xia</h4>
+                    
+                    <small class="card-text text-muted">行至水穷处, 坐看云起时</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/xiayy860612" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/">IT杂谈</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/">Language</a>
+
+
+<a class="breadcrumb-item" href="/IT%E6%9D%82%E8%B0%88/Language/java/">java</a>
+
+            
+            <span class="breadcrumb-item active">String</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>String</h1>
+            </header>
+            <br />
+            <article>
+
+<p>字符串由char序列组成, char是采用的UTF-16编码的Unicode码.</p>
+
+<p><strong>String类对象是不可变对象,
+对String对象的任何改变都不影响到原对象，
+相关的任何change操作都会生成新的对象.</strong></p>
+
+<p>字符串比较:</p>
+
+<ul>
+<li>==, 用来比较两个字符串的<strong>存储位置</strong>是否相同, 即检查是否同一个对象</li>
+<li>equals, 用来比较两个字符串的<strong>值</strong>是否相等</li>
+</ul>
+
+<p>字符串字面量存储在jvm虚拟机的常量池里, 能够快速读取, 只读.</p>
+
+<pre><code>// &quot;hello&quot;为字符串字面量, 存储在jvm的常量池里
+String s0 = &quot;hello&quot;;
+</code></pre>
+
+<h2 id="字符串的构建stringbuffer-stringbuilder">字符串的构建StringBuffer, StringBuilder</h2>
+
+<p>String字符串可以通过+, contact来进行拼接生成一个新的String对象</p>
+
+<ul>
+<li>contact只能拼接字符串</li>
+<li>使用+进行字符串拼接时, 不管后者是不是字符串, 总是会被转换为字符串,
+但效率低, 会被编译器转换为StringBuilder来进行拼接</li>
+</ul>
+
+<pre><code>String s0 = &quot;hello&quot;;
+String s1 = s0 + 123;
+
+反编译:
+   0: ldc           #2		// String hello
+   2: astore_1
+   3: new           #8		// class java/lang/StringBuilder
+   6: dup
+   7: invokespecial #9		// Method java/lang/StringBuilder.&quot;&lt;init&gt;&quot;:()V
+  10: aload_1
+  11: invokevirtual #10		// Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  14: bipush        123
+  16: invokevirtual #11		// Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  19: invokevirtual #12		// Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+  22: astore_2
+</code></pre>
+
+<p>推荐直接使用StringBuilder来进行字符串拼接.</p>
+
+<p>StringBuilder和StringBuffer的区别在于StringBuffer是线程安全的,
+所以如果不需要再多线程中进行字符串拼接的话, 就使用StringBuilder.</p>
+
+<p>字符串字面量的拼接操作会被jvm优化, 而如果有引用变量的拼接不会被优化.
+而对于被final修饰的变量，会在常量池中保存一个副本，
+对final变量的访问在编译期间都会直接被替代为真实的值。</p>
+
+<pre><code>String s2 = &quot;hello123&quot;;
+// 直接使用字符串字面量拼接
+String s3 = &quot;hello&quot; + 123;
+
+反编译:
+0: ldc           #13                 // String hello123
+2: astore_1
+3: ldc           #13                 // String hello123
+5: astore_2
+
+</code></pre>
+
+<pre><code>String s0 = &quot;hello&quot;;
+// 使用引用变量s0进行拼接
+String s1 = s0 + 123;
+
+反编译:
+0: ldc           #2		    // String hello
+2: astore_1
+3: new           #8		    // class java/lang/StringBuilder
+6: dup
+7: invokespecial #9		    // Method java/lang/StringBuilder.&quot;&lt;init&gt;&quot;:()V
+10: aload_1
+11: invokevirtual #10		// Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+14: bipush        123
+16: invokevirtual #11		// Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+19: invokevirtual #12		// Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+22: astore_2
+</code></pre>
+
+<pre><code>String s0 = &quot;hello123&quot;;
+final String s1 = &quot;hello&quot;;
+// 使用final变量s1进行拼接, 编译期间引用s1的地方都会直接被替代为&quot;hello&quot;字面量。
+String s2 = s1 + 123;
+assertTrue(s0 == s2);
+
+反编译:
+0: ldc           #13                 // String hello123
+2: astore_1
+3: ldc           #2                  // String hello
+5: astore_2
+6: ldc           #13                 // String hello123
+8: astore_3
+</code></pre>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://www.cnblogs.com/dolphin0520/p/3778589.html">探秘Java中的String、StringBuilder以及StringBuffer</a></li>
+</ul>
+</article>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+        </div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

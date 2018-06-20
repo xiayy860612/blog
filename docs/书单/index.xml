@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>书单 on Amos的Blog</title>
+    <link>/%E4%B9%A6%E5%8D%95/</link>
+    <description>Recent content in 书单 on Amos的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Amos Xia)</managingEditor>
+    <webMaster>xiayy860612@126.com (Amos Xia)</webMaster>
+    <lastBuildDate>Wed, 20 Jun 2018 11:46:54 +0000</lastBuildDate>
+    
+	<atom:link href="/%E4%B9%A6%E5%8D%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java 书单</title>
+      <link>/%E4%B9%A6%E5%8D%95/Java/</link>
+      <pubDate>Wed, 20 Jun 2018 07:18:27 +0000</pubDate>
+      <author>xiayy860612@126.com (Amos Xia)</author>
+      <guid>/%E4%B9%A6%E5%8D%95/Java/</guid>
+      <description> 初级 熟练掌握Java语法和基本特性, 并熟练使用Java以及相关的工具进行业务开发
+ Java核心技术 卷I, 掌握Java基础以及基本特性 SQL必知必会, 快速掌握sql  中级 掌握Java的常用特性, 能够深入理解各种特性和相关工具的实现, 并对JVM有所了解
+ Java并发编程实战, 深入理解Java的并发处理 高性能MySQL, 深入理解如何优化MySQL  高级 能够优化Java代码, 并能能够对JVM进行调优
+Reference  Java核心必读书籍共享  </description>
+    </item>
+    
+  </channel>
+</rss>
